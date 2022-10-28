@@ -1,0 +1,24 @@
+﻿<Page x:Class="WPF_TP.Views.SubViews.ListBienView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_TP.Views.SubViews"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="ListBienView" Width="400">
+
+    <Grid>
+
+        <Label x:Name="lblMesBiens" Content="Mes biens" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16"/>
+        <ListView x:Name="listViewBiens" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="46,68,46,34" SelectionChanged="listViewBiens_SelectionChanged" MouseDoubleClick="listViewDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+    </Grid>
+</Page>
