@@ -57,13 +57,11 @@ namespace WPF_Exo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ContratId"));
 
-                    b.Property<string>("DateDebut")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateDebut")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("DateFin")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateFin")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Loyer")
                         .HasColumnType("integer");
@@ -193,12 +191,7 @@ namespace WPF_Exo.Migrations
                     b.Property<int>("Mensualite")
                         .HasColumnType("integer");
 
-                    b.Property<int>("UnBienBiensId")
-                        .HasColumnType("integer");
-
                     b.HasKey("PretId");
-
-                    b.HasIndex("UnBienBiensId");
 
                     b.ToTable("Prets");
                 });
@@ -281,17 +274,6 @@ namespace WPF_Exo.Migrations
                         .WithMany("ListIntervention")
                         .HasForeignKey("PrestataireId");
 
-                    b.HasOne("WPF_TP.Data.Models.Biens", "UnBien")
-                        .WithMany()
-                        .HasForeignKey("UnBienBiensId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UnBien");
-                });
-
-            modelBuilder.Entity("WPF_TP.Data.Models.Pret", b =>
-                {
                     b.HasOne("WPF_TP.Data.Models.Biens", "UnBien")
                         .WithMany()
                         .HasForeignKey("UnBienBiensId")

@@ -25,31 +25,31 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockNom" Text="Nom" FontFamily="Arial" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxAdresse" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxAdresse" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockAdresse" Text="Adresse" FontFamily="Arial" FontSize="14" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxValeur" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxValeur" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockValeur" Text="Valeur" FontFamily="Arial" FontSize="14" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxSurface" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxSurface" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockSurface" Text="Surface" FontFamily="Arial" FontSize="14" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxNbPiece" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNbPiece" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockNbPiece" Text="Nombre de pièce" FontFamily="Arial" FontSize="14" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxNbChambre" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNbChambre" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockNbChambre" Text="Nombre de chambre" FontFamily="Arial" FontSize="14" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxCave" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxCave" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockCave" Text="Cave" FontFamily="Arial" FontSize="14" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxParking" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxParking" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
         <TextBlock x:Name="txtBlockParking" Text="Parking" FontFamily="Arial" FontSize="14" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
 
-        <Button x:Name="btnAjouterMaison" Grid.Row="8" Grid.Column="1" Content="Ajouter" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Width="82" Click="btnAjouterMaison_Click"/>
+        <Button x:Name="btnAjouterMaison" Grid.Row="8" Grid.Column="1" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="center" Width="82" Click="btnAjouterMaison_Click"/>
         
 
     </Grid>

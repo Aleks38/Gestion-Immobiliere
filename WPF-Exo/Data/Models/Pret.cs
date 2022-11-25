@@ -10,7 +10,6 @@ namespace WPF_TP.Data.Models
         private int mensualite;
         private int duree;
         private DateTime dateDebut;
-        private Biens unBien;
 
         public Pret(int apport, int mensualite, int duree, DateTime dateDebut, Biens unBien)
         {
@@ -18,7 +17,6 @@ namespace WPF_TP.Data.Models
             Mensualite = mensualite;
             Duree = duree;
             DateDebut = dateDebut;
-            UnBien = unBien;
 
         }
         public Pret()
@@ -30,7 +28,6 @@ namespace WPF_TP.Data.Models
         public int Mensualite { get => mensualite; set => mensualite = value; }
         public int Duree { get => duree; set => duree = value; }
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
-        public Biens UnBien { get => unBien; set => unBien = value; }
 
         protected int capitalRestant()
         {
