@@ -1,0 +1,20 @@
+﻿<Page x:Class="WPF_Exo.Views.Subviews.GererBienForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Subviews"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400" Title="GererBienForm">
+
+    <Grid>
+        <Label x:Name="lblAjouter" Content="Ajouter un bien" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Arial Black"/>
+        <ComboBox x:Name="cmbBoxTypeBien" HorizontalAlignment="Left" Margin="122,54,0,0" VerticalAlignment="Top" Width="252" FontFamily="Arial" SelectionChanged="cmbBoxTypeBien_SelectionChanged">
+            <ComboBoxItem>Box</ComboBoxItem>
+            <ComboBoxItem>Maison</ComboBoxItem>
+            <ComboBoxItem>Appartement</ComboBoxItem>
+        </ComboBox>
+        <Frame x:Name="frmTypeBien" Margin="0,95,0,0" Navigated="frmTypeBien_Navigated" Height="300"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,56,0,0" TextWrapping="Wrap" Text="Type de bien" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

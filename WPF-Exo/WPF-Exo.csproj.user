@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Forms\GererAppartementForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\GererBienForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\GererBoxForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\GererMaisonForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Subviews\BienSingleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BienView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NavigationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PrestataireView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PretView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\GererAppartementForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\GererBienForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\GererBoxForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\GererMaisonForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Subviews\BienSingleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Subviews\ListBienView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
