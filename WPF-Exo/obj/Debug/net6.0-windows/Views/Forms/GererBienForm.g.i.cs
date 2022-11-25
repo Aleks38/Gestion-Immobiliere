@@ -77,7 +77,7 @@ namespace WPF_Exo.Views.Subviews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF-Exo;V1.0.0.0;component/views/forms/gererbienform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF-Exo;component/views/forms/gererbienform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Forms\GererBienForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

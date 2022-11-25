@@ -28,6 +28,9 @@ namespace WPF_Exo
             InitializeComponent();
             this.Content = new NavigationView();
 
+            // ligne à ajouter pour la compatibilité des dates
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
             //ImoContext ctx = new ImoContext();
             //ctx.Biens.Add(new Box("ahahah","testadresse", 20, 30));
             //ctx.SaveChanges();

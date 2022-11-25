@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\alexy\OneDrive\Documents\Ecole\BTS\2eme Année\SLAM\TP\Gestion-Immobiliere\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\
 WPF_Exo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\alexy\OneDrive\Documents\Ecole\BTS\2eme Année\SLAM\TP\Gestion-Immobiliere\Gestion-Immobiliere\WPF-Exo\App.xaml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\App.xaml
 12-3251095
 
 37-1857166334
-2081719230443
+208-822190879
 MainWindow.xaml;Views\BienView.xaml;Views\Forms\GererAppartementForm.xaml;Views\Forms\GererBienForm.xaml;Views\Forms\GererBoxForm.xaml;Views\Forms\GererMaisonForm.xaml;Views\HomeView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;Views\Subviews\BienSingleView.xaml;Views\Subviews\ListBienView.xaml;
 
 False
