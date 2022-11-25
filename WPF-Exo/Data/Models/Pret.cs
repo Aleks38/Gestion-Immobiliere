@@ -45,6 +45,7 @@ namespace WPF_TP.Data.Models
             return capital;
         }
 
+        //fonction pour afficher les détails d'un bien
         public void afficher()
         {
             Console.WriteLine("===Prêt===");
