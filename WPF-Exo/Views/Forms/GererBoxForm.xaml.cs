@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,9 +44,14 @@ namespace WPF_Exo.Views.Subviews
 
             Box box = new Box(nom, adresse, valeur, surface);
             ImoContext ctx = new ImoContext();
+
+            Log.Logger.Debug("Connexion à la base de donnée");
+
             ctx.Biens.Add(box);
             ctx.SaveChanges();
             this.notifyObservers();
+            
+            Log.Logger.Information("Le Box : " + nom + " a été créé");
 
         }
         void notifyObservers()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Serilog;
+using Serilog.Events;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +33,14 @@ namespace WPF_Exo
             //ImoContext ctx = new ImoContext();
             //ctx.Biens.Add(new Box("ahahah","testadresse", 20, 30));
             //ctx.SaveChanges();
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.File("../../../log/log.txt")
+                .WriteTo.Console(restrictedToMinimumLevel: LogEventLevel.Debug)
+                .CreateLogger();
+
+            Log.Logger.Information("Message à afficher");
         }
     }
 }

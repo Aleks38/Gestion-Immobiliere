@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,7 +61,10 @@ namespace WPF_Exo.Views.Subviews
 
             ctx.Biens.Add(new Appartement(nom, adresse, valeur, surface, nbPiece, nbChambre, cave, parking, etage, ascenseur, chauffage));
             ctx.SaveChanges();
+            Log.Logger.Debug("Connexion à la base de donnée");
             this.notifyObservers();
+
+            Log.Logger.Information("L'appartement : " + nom + " a été créée");
         }
         void notifyObservers()
         {

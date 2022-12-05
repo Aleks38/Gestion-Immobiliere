@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,11 +43,15 @@ namespace WPF_Exo.Views.Subviews
             int nbChambre = int.Parse(txtBxNbChambre.Text);
             int cave = int.Parse(txtBxCave.Text);
             int parking = int.Parse(txtBxParking.Text);
+            
 
 
             ctx.Biens.Add(new Maison(nom, adresse, valeur, surface, nbPiece, nbChambre, cave, parking));
             ctx.SaveChanges();
+            Log.Logger.Debug("Connexion à la base de donnée");
             this.notifyObservers();
+
+            Log.Logger.Information("Le Maison : " + nom + " a été créée");
         }
         void notifyObservers()
         {

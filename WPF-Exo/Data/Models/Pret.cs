@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -42,6 +43,9 @@ namespace WPF_TP.Data.Models
             int dejaPaye = mensualite * dateInt;
 
             int capital = prixAppart - dejaPaye;
+
+            Log.Logger.Verbose("Calcul des bénéfices net");
+
             return capital;
         }
 

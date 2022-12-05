@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using WPF_TP.Data.DAL;
@@ -37,6 +38,9 @@ namespace WPF_TP.Data.Models
             int mensualite = Pret.Mensualite;
 
             int benef = mensualite - loyer;
+
+            Log.Logger.Verbose("Calcul du bénéfice net");
+
             return benef;
         }
 
