@@ -27,7 +27,7 @@ namespace WPF_TP.Views
         public BienView()
         {
             InitializeComponent();
-            ListBienView bienView = new ListBienView();
+            ListBienView bienView = new ListBienView(this.frmGererBien);
             this.frmListBien.Navigate(bienView);
             this.frmGererBien.Navigate(new GererBienForm(bienView));
         }

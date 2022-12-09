@@ -9,47 +9,65 @@
       Title="GererAppartementForm">
 
     <Grid>
-        <TextBox x:Name="txtBxNom" HorizontalAlignment="Left" Margin="175,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockNom" HorizontalAlignment="Left" Margin="71,11,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <TextBox x:Name="txtBxAdresse" HorizontalAlignment="Left" Margin="175,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockAdresse" HorizontalAlignment="Left" Margin="60,33,0,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockNom" Text="Nom" FontFamily="Arial" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBlock x:Name="txtBlockValeur" HorizontalAlignment="Left" Margin="66,54,0,0" TextWrapping="Wrap" Text="Valeur" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
-        <TextBox x:Name="txtBxValeur" HorizontalAlignment="Left" Margin="175,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBlock x:Name="txtBlockAdresse" Text="Adresse" FontFamily="Arial" FontSize="14" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxAdresse" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBlock x:Name="txtBlockSurface" HorizontalAlignment="Left" Margin="66,77,0,0" TextWrapping="Wrap" Text="Surface" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
-        <TextBox x:Name="txtBxSurface" HorizontalAlignment="Left" Margin="175,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBlock x:Name="txtBlockValeur" Text="Valeur" FontFamily="Arial" FontSize="14" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxValeur" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxNbPiece" HorizontalAlignment="Left" Margin="175,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockNbPiece" HorizontalAlignment="Left" Margin="28,97,0,0" TextWrapping="Wrap" Text="Nombre de pièce" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockSurface" Text="Surface" FontFamily="Arial" FontSize="14" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxSurface" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxNbChambre" HorizontalAlignment="Left" Margin="175,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockNbChambre" HorizontalAlignment="Left" Margin="16,118,0,0" TextWrapping="Wrap" Text="Nombre de chambre" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockNbPiece" Text="Nombre de pièce" FontFamily="Arial" FontSize="14" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNbPiece" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxCave" HorizontalAlignment="Left" Margin="175,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockCave" HorizontalAlignment="Left" Margin="69,139,0,0" TextWrapping="Wrap" Text="Cave" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockNbChambre" Text="Nombre de chambre" FontFamily="Arial" FontSize="14" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNbChambre" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxParking" HorizontalAlignment="Left" Margin="175,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockParking" HorizontalAlignment="Left" Margin="61,160,0,0" TextWrapping="Wrap" Text="Parking" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockCave" Text="Cave" FontFamily="Arial" FontSize="14" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxCave" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBox x:Name="txtBxEtage" HorizontalAlignment="Left" Margin="175,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBlock x:Name="txtBlockEtage" HorizontalAlignment="Left" Margin="67,182,0,0" TextWrapping="Wrap" Text="Etage" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
+        <TextBlock x:Name="txtBlockParking" Text="Parking" FontFamily="Arial" FontSize="14" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxParking" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
+        <TextBlock x:Name="txtBlockEtage" Text="Etage" FontFamily="Arial" FontSize="14" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxEtage" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <ComboBox x:Name="cmbBoxAscenseur" HorizontalAlignment="Left" Margin="175,206,0,0" VerticalAlignment="Top" Width="205" Height="15">
+        <TextBlock x:Name="txtBlockAscenceur" Text="Ascenseur" FontFamily="Arial" FontSize="14" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center"/>
+        <ComboBox x:Name="cmbBoxAscenseur" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center">
             <ComboBoxItem>Possède</ComboBoxItem>
             <ComboBoxItem>Ne possède pas</ComboBoxItem>
         </ComboBox>
-        <TextBlock x:Name="txtBlockAscenceur" HorizontalAlignment="Left" Margin="57,205,0,0" TextWrapping="Wrap" Text="Ascenseur" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
 
-        <ComboBox x:Name="cmbBoxChauffage" HorizontalAlignment="Left" Margin="175,227,0,0" VerticalAlignment="Top" Width="205" Height="15">
+        <TextBlock x:Name="txtBlockChauffage" Text="Chauffage" FontFamily="Arial" FontSize="14" Grid.Row="10" Grid.Column="0" VerticalAlignment="Center"/>
+        <ComboBox x:Name="cmbBoxChauffage" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center">
             <ComboBoxItem>Possède</ComboBoxItem>
             <ComboBoxItem>Ne possède pas</ComboBoxItem>
         </ComboBox>
-        <TextBlock x:Name="txtBlockChauffage" HorizontalAlignment="Left" Margin="54,225,0,0" TextWrapping="Wrap" Text="Chauffage" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
 
-        <Button x:Name="btnAjouterAppartement" Content="Ajouter" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Width="82" Height="20" Click="btnAjouterAppartement_Click_1"/>
+        <Button x:Name="btnAjouterAppartement" Content="Ajouter"  FontFamily="Arial" FontSize="14" Grid.Row="12" Grid.Column="1" VerticalAlignment="Center" Width="82" Height="20" Click="btnAjouterAppartement_Click_1"/>
 
     </Grid>
 </Page>

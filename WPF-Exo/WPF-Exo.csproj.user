@@ -7,6 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Details\AppartementAffciherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\BienAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\BoxAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\HabitationAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\MaisonAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Forms\GererAppartementForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +43,21 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\BienView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\AppartementAffciherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\BienAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\BoxAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\HabitationAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\MaisonAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HomeView.xaml">

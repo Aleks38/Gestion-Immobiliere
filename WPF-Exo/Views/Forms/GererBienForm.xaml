@@ -14,7 +14,8 @@
             <ComboBoxItem>Maison</ComboBoxItem>
             <ComboBoxItem>Appartement</ComboBoxItem>
         </ComboBox>
-        <Frame x:Name="frmTypeBien" Margin="0,95,0,0" Navigated="frmTypeBien_Navigated" Height="300"/>
         <TextBlock HorizontalAlignment="Left" Margin="33,56,0,0" TextWrapping="Wrap" Text="Type de bien" VerticalAlignment="Top"/>
+        
+        <Frame x:Name="frmTypeBien" Margin="0,95,0,0" Navigated="frmTypeBien_Navigated" Height="300"/>
     </Grid>
 </Page>

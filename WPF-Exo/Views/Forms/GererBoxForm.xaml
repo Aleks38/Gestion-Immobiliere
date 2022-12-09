@@ -7,18 +7,31 @@
       mc:Ignorable="d" d:DesignWidth="400"
       Title="GererBoxForm" Height="300">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <TextBox x:Name="txtBxNom" HorizontalAlignment="Left" Margin="175,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBox x:Name="txtBxAdresse" HorizontalAlignment="Left" Margin="175,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBox x:Name="txtBxSurface" HorizontalAlignment="Left" Margin="175,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBox x:Name="txtBxValeur" HorizontalAlignment="Left" Margin="175,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="205"/>
+        <TextBlock x:Name="txtBlockNom" Text="Nom" FontFamily="Arial" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
 
-        <TextBlock x:Name="txtBlockNom" HorizontalAlignment="Left" Margin="76,6,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
-        <TextBlock x:Name="txtBlockAdresse" HorizontalAlignment="Left" Margin="54,79,0,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>
-        <TextBlock x:Name="txtBlockValeur" HorizontalAlignment="Left" Margin="66,0,0,0" TextWrapping="Wrap" Text="Valeur" VerticalAlignment="Center" FontFamily="Arial" FontSize="14"/>
-        <TextBlock x:Name="txtBlockSurface" HorizontalAlignment="Left" Margin="66,207,0,0" TextWrapping="Wrap" Text="Surface" VerticalAlignment="Top" FontFamily="Arial" FontSize="14"/>      
-        
-        <Button x:Name="btnAjouterBox" Content="Ajouter" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Width="82" Click="btnAjouterBox_Click"/>
+        <TextBlock x:Name="txtBlockAdresse" Text="Adresse" FontFamily="Arial" FontSize="14" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxAdresse" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="txtBlockSurface" Text="Surface" FontFamily="Arial" FontSize="14" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxSurface" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="txtBlockValeur" Text="Valeur" FontFamily="Arial" FontSize="14" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxValeur" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
+
+        <Button x:Name="btnAjouterBox" Content="Ajouter" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Width="82" Click="btnAjouterBox_Click"/>
 
     </Grid>
 </Page>

@@ -25,7 +25,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtBxNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Margin="0,8,0,0" Height="18" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtBlockNom" Text="Nom" FontFamily="Arial" FontSize="14" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
 
         <TextBox x:Name="txtBxAdresse" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"/>
@@ -50,7 +50,7 @@
         <TextBlock x:Name="txtBlockParking" Text="Parking" FontFamily="Arial" FontSize="14" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
 
         <Button x:Name="btnAjouterMaison" Grid.Row="8" Grid.Column="1" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="center" Width="82" Click="btnAjouterMaison_Click"/>
-        
+
 
     </Grid>
 </Page>
