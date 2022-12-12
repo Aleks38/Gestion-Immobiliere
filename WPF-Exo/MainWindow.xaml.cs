@@ -34,13 +34,25 @@ namespace WPF_Exo
             //ctx.Biens.Add(new Box("ahahah","testadresse", 20, 30));
             //ctx.SaveChanges();
 
+            //Question 5 à finir 
             Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
                 .MinimumLevel.Debug()
-                .WriteTo.File("../../../log/log.txt")
+                .WriteTo.File("../../../log/log.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy} {Level:u3}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day)
                 .WriteTo.Console(restrictedToMinimumLevel: LogEventLevel.Debug)
                 .CreateLogger();
 
             Log.Logger.Information("Message à afficher");
+
+
+            string nomFichier()
+            {
+                string date  = DateTime.Now.ToString("dd-MM");
+
+                string nom = "log-" + date;
+
+                return nom;
+            }
         }
     }
 }
