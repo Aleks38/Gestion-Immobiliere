@@ -35,14 +35,14 @@ namespace WPF_TP.Views.SubViews
 
             foreach (Biens bien in ctx.Biens)
             {
-                this.listViewBiens.Items.Add(bien.Nom);
+                this.listViewBiens.Items.Add(bien);
             }
 
             this.bienRightFrame = bienRightFrame;
         }
         private void listViewBiens_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ImoContext ctx = ImoContext.getInstance();
+            ImoContext ctx = ImoContext.getInstance();            
 
             string nomBien = (string)(sender as ListBox).SelectedItem;
 

@@ -16,6 +16,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -31,14 +34,17 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            
         </Grid.RowDefinitions>
 
-        <Label x:Name="lblMesBiens" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Content="Mes biens" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
+        <Label x:Name="lblMesBiens" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Content="Mes biens" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
         
-        <ListView x:Name="listViewBiens" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="9" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listViewBiens_SelectionChanged" MouseDoubleClick="listViewDoubleClick">
+        <ListView x:Name="listViewBiens" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="9" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listViewBiens_SelectionChanged" MouseDoubleClick="listViewDoubleClick">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Nom" Width="125" DisplayMemberBinding="{Binding Nom}" />
+                    <GridViewColumn Header="Surface" Width="80" DisplayMemberBinding="{Binding Surface}" />
+                    <GridViewColumn Header="Valeur" Width="80" DisplayMemberBinding="{Binding Valeur}" />
                 </GridView>
             </ListView.View>
         </ListView>
