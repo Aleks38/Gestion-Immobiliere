@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Details
 {
@@ -20,10 +21,10 @@ namespace WPF_Exo.Views.Details
     /// </summary>
     public partial class MaisonAfficherDetail : Page
     {
-        public MaisonAfficherDetail()
+        public MaisonAfficherDetail(Maison maison)
         {
             InitializeComponent();
-            HabitationAfficherDetail habitationDetail = new HabitationAfficherDetail();
+            HabitationAfficherDetail habitationDetail = new HabitationAfficherDetail(maison);
             FrmHabitationAfficherDetail.Navigate(habitationDetail);
         }
 

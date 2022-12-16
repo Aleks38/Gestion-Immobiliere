@@ -54,18 +54,23 @@ namespace WPF_TP.Views.SubViews
 
             list = result.ToList();
 
-            foreach (int bien in list)
-            {
-                string test = bien.ToString();
-                MessageBox.Show(test);
-            }
+            int idBien = list[list.Count() - 1];
 
-            
+            BienDetailView bienDetailView = new BienDetailView(idBien);
+            this.bienRightFrame.Navigate(bienDetailView);
+
+        }
+
+        public void chargerViewParId(int id)
+        {
+            ImoContext ctx = ImoContext.getInstance();
+            bool place = false;
+            Biens bien = ctx.Biens.Find(id);
+
         }
         public void listViewDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            AppartementAffciherDetail appartementDetail = new AppartementAffciherDetail();
-            this.bienRightFrame.Navigate(appartementDetail);
+
         }
         private void refreshList()
         {

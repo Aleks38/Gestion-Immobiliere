@@ -9,9 +9,33 @@
       Title="ListBienView" Width="400">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <Label x:Name="lblMesBiens" Content="Mes biens" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16"/>
-        <ListView x:Name="listViewBiens" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="46,68,46,34" SelectionChanged="listViewBiens_SelectionChanged" MouseDoubleClick="listViewDoubleClick">
+        <Label x:Name="lblMesBiens" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Content="Mes biens" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
+        
+        <ListView x:Name="listViewBiens" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="9" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="listViewBiens_SelectionChanged" MouseDoubleClick="listViewDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

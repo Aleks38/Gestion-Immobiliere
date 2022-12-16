@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_Exo.Views.Subviews;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Details
 {
@@ -21,12 +22,16 @@ namespace WPF_Exo.Views.Details
     /// </summary>
     public partial class HabitationAfficherDetail : Page
     {
-        public HabitationAfficherDetail()
+        public HabitationAfficherDetail(Habitations habitattion)
         {
             InitializeComponent();
-            BienAfficherDetail bienDetail = new BienAfficherDetail();
+            BienAfficherDetail bienDetail = new BienAfficherDetail(habitattion);
             this.FrmBienAfficherDetail.Navigate(bienDetail);
 
+            lblNbrCave.Content = habitattion.Cave;
+            lblNbrChambre.Content = habitattion.NbChambre;
+            lblNbrParking.Content = habitattion.Parking;
+            lblNbrPiece.Content = habitattion.NbPiece;
         }
 
         private void FrmBienAfficherDetail_Navigated(object sender, NavigationEventArgs e)

@@ -9,7 +9,13 @@
       Title="BienView">
 
     <Grid>
-        <Frame x:Name="frmListBien" Margin="0,0,400,0" Navigated="frmListBien_Navigated"/>
-        <Frame x:Name="frmGererBien" Margin="400,0,0,0" Navigated="frmAddBien_Navigated"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+       
+        <Frame x:Name="frmListBien" Navigated="frmListBien_Navigated" Grid.Column="0"/>
+        <Frame x:Name="frmGererBien" Navigated="frmAddBien_Navigated" Grid.Column="1"/>
     </Grid>
 </Page>

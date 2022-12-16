@@ -5,7 +5,7 @@ using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Data.Models
 {
-    class Appartement : Habitations
+    public class Appartement : Habitations
     {
         private int etage;
         private bool ascenseur;

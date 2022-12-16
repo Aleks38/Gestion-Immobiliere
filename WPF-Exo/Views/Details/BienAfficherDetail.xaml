@@ -22,14 +22,19 @@
         </Grid.RowDefinitions>
 
         <TextBlock Text="Détails des biens" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-
+       
         <TextBlock Text="Nom" FontFamily="Arial" FontSize="14" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-
+        <Label x:Name="lblNom" Grid.Row="1" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        
         <TextBlock Text="Adresse" FontFamily="Arial" FontSize="14" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblAdresse" Grid.Row="2" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
 
         <TextBlock Text="Surface" FontFamily="Arial" FontSize="14" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblSurface" Grid.Row="3" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
 
         <TextBlock Text="Valeur" FontFamily="Arial" FontSize="14" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblValeur" Grid.Row="4" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        
 
     </Grid>
 </Page>

@@ -8,7 +8,7 @@ namespace WPF_TP.Data.Models
     {
         private int loyer;
         private string dateDebut;
-        private string dateFin;
+        private static string? dateFin = null;
         private List<Locataire> listLocataire = new List<Locataire>();
         private Biens unBien;
 

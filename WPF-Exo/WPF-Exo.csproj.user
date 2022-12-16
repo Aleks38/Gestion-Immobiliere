@@ -13,6 +13,9 @@
     <Compile Update="Views\Details\BienAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Details\BienDetailView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Details\BoxAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Details\BienAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\BienDetailView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Details\BoxAfficherDetail.xaml">

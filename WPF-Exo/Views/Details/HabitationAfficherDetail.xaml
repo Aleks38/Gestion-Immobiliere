@@ -28,12 +28,17 @@
         <Frame x:Name="FrmBienAfficherDetail" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Navigated="FrmBienAfficherDetail_Navigated"/>
         
         <TextBlock Text="Nombre de pièce" FontFamily="Arial" FontSize="14" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
-        
+        <Label x:Name="lblNbrPiece" Grid.Row="5" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+
         <TextBlock Text="Nombre de chambre" FontFamily="Arial" FontSize="14" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrChambre" Grid.Row="6" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
         
         <TextBlock Text="Nombre de cave" FontFamily="Arial" FontSize="14" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrCave" Grid.Row="7" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
         
         <TextBlock Text="Nombre de parking" FontFamily="Arial" FontSize="14" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrParking" Grid.Row="8" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        
 
     </Grid>
 </Page>

@@ -33,13 +33,13 @@
         <Frame x:Name="FrmHabitableAfficherDetail" Grid.Row="0" Grid.RowSpan="8" Grid.ColumnSpan="2" Navigated="FrmHabitableAfficherDetail_Navigated"/>
 
         <TextBlock Text="Etage" FontFamily="Arial" FontSize="14" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
-
+        <Label x:Name="lblEtage" Grid.Row="8" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
 
         <TextBlock Text="Ascenseur" FontFamily="Arial" FontSize="14" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center"/>
-
+        <Label x:Name="lblAscenseur" Grid.Row="9" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
 
         <TextBlock Text="Chauffage commun" FontFamily="Arial" FontSize="14" Grid.Row="10" Grid.Column="0" VerticalAlignment="Center"/>
-        
-        
+        <Label x:Name="lblChauffageCommun" Grid.Row="10" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+
     </Grid>
 </Page>

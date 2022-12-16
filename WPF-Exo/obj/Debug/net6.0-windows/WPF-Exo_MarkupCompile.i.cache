@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\App.xaml
-17-1107697717
+18-1196416609
 
-42-235993434
+44-1832208595
 208-822190879
-MainWindow.xaml;Views\BienView.xaml;Views\Details\AppartementAffciherDetail.xaml;Views\Details\BienAfficherDetail.xaml;Views\Details\BoxAfficherDetail.xaml;Views\Details\HabitationAfficherDetail.xaml;Views\Details\MaisonAfficherDetail.xaml;Views\Forms\GererAppartementForm.xaml;Views\Forms\GererBienForm.xaml;Views\Forms\GererBoxForm.xaml;Views\Forms\GererMaisonForm.xaml;Views\HomeView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;Views\Subviews\BienSingleView.xaml;Views\Subviews\ListBienView.xaml;
+MainWindow.xaml;Views\BienView.xaml;Views\Details\AppartementAffciherDetail.xaml;Views\Details\BienAfficherDetail.xaml;Views\Details\BienDetailView.xaml;Views\Details\BoxAfficherDetail.xaml;Views\Details\HabitationAfficherDetail.xaml;Views\Details\MaisonAfficherDetail.xaml;Views\Forms\GererAppartementForm.xaml;Views\Forms\GererBienForm.xaml;Views\Forms\GererBoxForm.xaml;Views\Forms\GererMaisonForm.xaml;Views\HomeView.xaml;Views\NavigationView.xaml;Views\PrestataireView.xaml;Views\PretView.xaml;Views\Subviews\BienSingleView.xaml;Views\Subviews\ListBienView.xaml;
 
 True
 

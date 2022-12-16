@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Habitations : Biens
+    public class Habitations : Biens
     {
         private int nbPiece;
         private int nbChambre;
@@ -34,4 +34,4 @@ namespace WPF_TP.Data.Models
             Console.WriteLine("Nombres parking : " + parking);
         }
     }
-}
+}  

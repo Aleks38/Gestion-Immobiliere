@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Box : Biens
+    public class Box : Biens
     {
         public Box(string nom, string adresse, int valeur, int surface)
             : base(nom, adresse, valeur, surface)

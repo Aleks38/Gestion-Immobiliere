@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Details
 {
@@ -20,9 +21,13 @@ namespace WPF_Exo.Views.Details
     /// </summary>
     public partial class BienAfficherDetail : Page
     {
-        public BienAfficherDetail()
+        public BienAfficherDetail(Biens bien)
         {
             InitializeComponent();
+            this.lblNom.Content = bien.Nom;
+            this.lblAdresse.Content = bien.Adresse;
+            this.lblSurface.Content = bien.Surface;
+            this.lblValeur.Content = bien.Valeur;
         }
     }
 }

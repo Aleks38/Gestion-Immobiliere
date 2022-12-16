@@ -2,6 +2,12 @@
 
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\MainWindow.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\BienView.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\AppartementAffciherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\BienAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\BienDetailView.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\BoxAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\HabitationAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\MaisonAfficherDetail.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\GererAppartementForm.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\GererBienForm.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\GererBoxForm.xaml;;
@@ -12,9 +18,4 @@ FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\PrestataireView
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\PretView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\BienSingleView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\ListBienView.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\AppartementAffciherDetail.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\BienAfficherDetail.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\BoxAfficherDetail.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\HabitationAfficherDetail.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Details\MaisonAfficherDetail.xaml;;
 

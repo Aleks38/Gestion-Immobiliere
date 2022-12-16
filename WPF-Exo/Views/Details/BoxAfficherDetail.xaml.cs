@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Details
 {
@@ -20,11 +21,12 @@ namespace WPF_Exo.Views.Details
     /// </summary>
     public partial class BoxAfficherDetail : Page
     {
-        public BoxAfficherDetail()
+        public BoxAfficherDetail(Box box)
         {
             InitializeComponent();
-            BienAfficherDetail bienDetail = new BienAfficherDetail();
+            BienAfficherDetail bienDetail = new BienAfficherDetail(box);
             FrmBienAfficherDetail.Navigate(bienDetail);
+
         }
 
         private void FrmBienAfficherDetail_Navigated(object sender, NavigationEventArgs e)

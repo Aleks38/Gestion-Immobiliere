@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Documents;
 using WPF_TP.Data.DAL;
 
 namespace WPF_TP.Data.Models
 {
-    class Biens
+    public class Biens
     {
         private string nom;
         private string adresse;
@@ -51,5 +52,29 @@ namespace WPF_TP.Data.Models
         {
             Console.WriteLine("les abonnés ils m'ont di de la peindre, alors je l'ai peindu");
         }
+
+        public int calculerRentabiliteNetMensuel()
+        {
+            int montantPret = 0;
+            int loyer = 0;
+
+            if (this.Pret != null)
+            {
+                montantPret = this.Pret.Mensualite;
+            }
+            
+            if (this.listContrat.Count > 0)
+            {
+                foreach (Contrat contrat in this.listContrat)
+                {
+                    if (contrat.DateFin == null)
+                    {
+                        loyer = contrat.Loyer;
+                        break;
+                    }
+                }
+            }
+            return loyer - montantPret;
+        } 
     }
 }

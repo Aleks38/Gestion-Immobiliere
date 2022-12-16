@@ -9,6 +9,7 @@
       Title="HomeView">
 
     <Grid>
+        
         <Label x:Name="lblExplication" Content="Tableau de bord et statistiques" HorizontalAlignment="Center" Margin="0,196,0,0" VerticalAlignment="Top" FontSize="14" HorizontalContentAlignment="Center"/>
 
     </Grid>

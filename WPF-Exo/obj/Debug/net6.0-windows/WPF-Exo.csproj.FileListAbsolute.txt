@@ -312,3 +312,5 @@ C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windo
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BoxAfficherDetail.baml
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\HabitationAfficherDetail.baml
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\MaisonAfficherDetail.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienDetailView.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienDetailView.baml

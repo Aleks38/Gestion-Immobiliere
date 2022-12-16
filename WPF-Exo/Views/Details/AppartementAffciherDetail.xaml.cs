@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Data.Models;
 
 namespace WPF_Exo.Views.Details
 {
@@ -20,11 +21,29 @@ namespace WPF_Exo.Views.Details
     /// </summary>
     public partial class AppartementAffciherDetail : Page
     {
-        public AppartementAffciherDetail()
+        public AppartementAffciherDetail(Appartement appartement)
         {
             InitializeComponent();
-            HabitationAfficherDetail habitattionDetail = new HabitationAfficherDetail();
+            HabitationAfficherDetail habitattionDetail = new HabitationAfficherDetail(appartement);
             this.FrmHabitableAfficherDetail.Navigate(habitattionDetail);
+
+            lblEtage.Content = appartement.Etage;
+            if (appartement.Chauffage == false)
+            {
+                lblChauffageCommun.Content = "Ne possède pas";
+            }
+            else if (appartement.Chauffage == true)
+            {
+                lblChauffageCommun.Content = "Possède";
+            }
+            if (appartement.Ascenseur == false)
+            {
+                lblAscenseur.Content = "Ne possède pas";
+            }
+            else if (appartement.Ascenseur == true)
+            {
+                lblAscenseur.Content = "Possède";
+            }
         }
 
         private void FrmHabitableAfficherDetail_Navigated(object sender, NavigationEventArgs e)
