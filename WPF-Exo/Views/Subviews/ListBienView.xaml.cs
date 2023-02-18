@@ -42,21 +42,11 @@ namespace WPF_TP.Views.SubViews
         }
         private void listViewBiens_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ImoContext ctx = ImoContext.getInstance();            
+            ImoContext ctx = ImoContext.getInstance();
 
-            string nomBien = (string)(sender as ListBox).SelectedItem;
+            Biens theBien = (Biens)(sender as ListBox).SelectedItem;
 
-            var result = from a in ctx.Biens
-                          where a.Nom == nomBien
-                          select a.BiensId;
-
-            List<int> list;
-
-            list = result.ToList();
-
-            int idBien = list[list.Count() - 1];
-
-            BienDetailView bienDetailView = new BienDetailView(idBien);
+            BienDetailView bienDetailView = new BienDetailView (theBien.BiensId);
             this.bienRightFrame.Navigate(bienDetailView);
 
         }

@@ -9,7 +9,22 @@
       Title="BienDetailView">
 
     <Grid>
-        <Frame x:Name="frmDetailBien" Navigated="frmDetailBien_Navigated"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="frmDetailBien" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="2" Navigated="frmDetailBien_Navigated"/>
+        <Button Content="Supprimer" Grid.Row="6" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnSupp"/>
+        <Button Content="Modifier" Grid.Row="6" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModifier"/>
 
     </Grid>
 </Page>

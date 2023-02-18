@@ -36,12 +36,12 @@ namespace WPF_Exo
 
             ImoContext ctx = new ImoContext();
             Appartement unAppartement = new Appartement("Loft", "1 passage des soubisses", 400000, 150, 8, 4, 1, 1, 5, true, true);
-            Locataire unLocataire = new Locataire("Montana", "Tony", 52, "Dealer");
-            List<Locataire> listLocataire = new List<Locataire>();
-            listLocataire.Add(unLocataire);
-            ctx.Biens.Add(unAppartement);
-            ctx.Prets.Add(new Pret(20000, 1000, 240, new DateTime(2015, 07, 23), unAppartement));
-            ctx.Contrats.Add(new Contrat(1200, "2015, 09, 01", "2020, 09, 01", listLocataire, unAppartement));
+            //Locataire unLocataire = new Locataire("Montana", "Tony", 52, "Dealer");
+            //List<Locataire> listLocataire = new List<Locataire>();
+            //listLocataire.Add(unLocataire);
+            //ctx.Biens.Add(unAppartement);
+            //ctx.Prets.Add(new Pret(20000, 1000, 240, new DateTime(2015, 07, 23), unAppartement));
+            //ctx.Contrats.Add(new Contrat(1200, "2015, 09, 01", "2020, 09, 01", listLocataire, unAppartement));
             ctx.SaveChanges();
         }
     }
