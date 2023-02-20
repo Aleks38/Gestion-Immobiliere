@@ -1,20 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WPF_Exo.Views.Details;
-using WPF_Exo.Views.Subviews;
 using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
@@ -46,8 +32,7 @@ namespace WPF_TP.Views.SubViews
 
             Biens theBien = (Biens)(sender as ListBox).SelectedItem;
 
-            BienDetailView bienDetailView = new BienDetailView (theBien.BiensId);
-            this.bienRightFrame.Navigate(bienDetailView);
+            bienDetail(theBien.BiensId);
 
         }
 
@@ -62,15 +47,20 @@ namespace WPF_TP.Views.SubViews
         {
 
         }
+        private void bienDetail(int idBien)
+        {
+            ListBienView bienView = new ListBienView(bienRightFrame);
+            BienDetailView bienDetail = new BienDetailView(idBien, bienView);
+
+            this.bienRightFrame.Navigate(bienDetail);
+        }
         private void refreshList()
         {
             ImoContext ctx = ImoContext.getInstance();
 
-            this.listViewBiens.Items.Clear();
-
             foreach (Biens bien in ctx.Biens)
             {
-                this.listViewBiens.Items.Add(bien.Nom);
+                this.listViewBiens.Items.Add(bien);
             }
         }
         public void update()

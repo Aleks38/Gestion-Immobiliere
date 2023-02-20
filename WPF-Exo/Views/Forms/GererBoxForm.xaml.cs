@@ -35,7 +35,6 @@ namespace WPF_Exo.Views.Subviews
         private void btnAjouterBox_Click(object sender, RoutedEventArgs e)
         {
             
-
             string nom = txtBxNom.Text;
             int valeur = int.Parse(txtBxValeur.Text);
             string adresse = txtBxAdresse.Text;

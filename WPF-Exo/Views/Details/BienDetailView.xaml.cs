@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_Exo.Data.Models;
+using WPF_Exo.Views.Subviews;
 using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
@@ -27,16 +28,17 @@ namespace WPF_Exo.Views.Details
         public int IdBien { get; set; }
         private IObserver obs;
 
-        public BienDetailView(IObserver obs)
+        public BienDetailView(int idBien, IObserver obs)
         {
+            
             InitializeComponent();
             this.obs = obs;
-        }
-
-        public BienDetailView(int idBien )
-        {
-            InitializeComponent();
             this.Observers = new List<IObserver>();
+
+            if (this.obs != null)
+            {
+                Observers.Add(obs);
+            }
 
             IdBien = idBien;
             ImoContext ctx = ImoContext.getInstance();
@@ -54,8 +56,7 @@ namespace WPF_Exo.Views.Details
             {
                 this.frmDetailBien.Navigate(new MaisonAfficherDetail((Maison)bien));
             }
-
-            
+   
         }
         public List<IObserver> Observers { get; set; }
 
@@ -76,11 +77,6 @@ namespace WPF_Exo.Views.Details
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                if (this.obs != null)
-                {
-                    Observers.Add(this.obs);
-
-                }
                 ImoContext ctx = ImoContext.getInstance();
                 Biens bien = ctx.Biens.Find(IdBien);
                 ctx.Biens.Remove(bien);
@@ -99,6 +95,5 @@ namespace WPF_Exo.Views.Details
             }
         }
     }
-
 
 }
