@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Details\AppartementAffciherDetail.xaml.cs">
+    <Compile Update="Views\Details\AppartementAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Details\BienAfficherDetail.xaml.cs">
@@ -23,6 +23,24 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Details\MaisonAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\AppartementDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\BienDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\BienModifyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\BoxDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\HabitationDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Details\Modify\MaisonDoModify.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Forms\GererAppartementForm.xaml.cs">
@@ -48,7 +66,7 @@
     <Page Update="Views\BienView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\AppartementAffciherDetail.xaml">
+    <Page Update="Views\Details\AppartementAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Details\BienAfficherDetail.xaml">
@@ -64,6 +82,24 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Details\MaisonAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\AppartementDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\BienDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\BienModifyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\BoxDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\HabitationDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Details\Modify\MaisonDoModify.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HomeView.xaml">

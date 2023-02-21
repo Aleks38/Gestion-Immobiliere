@@ -1,0 +1,45 @@
+﻿<Page x:Class="WPF_Exo.Views.Details.AppartementAfficherDetail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Details"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="AppartementAfficherDetail">
+
+    <Grid>
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>            
+        </Grid.RowDefinitions>
+        
+        <Frame x:Name="FrmHabitableAfficherDetail" Grid.Row="0" Grid.RowSpan="8" Grid.ColumnSpan="2" Navigated="FrmHabitableAfficherDetail_Navigated"/>
+
+        <TextBlock Text="Etage" FontFamily="Arial" FontSize="14" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblEtage" Grid.Row="8" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+
+        <TextBlock Text="Ascenseur" FontFamily="Arial" FontSize="14" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblAscenseur" Grid.Row="9" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+
+        <TextBlock Text="Chauffage commun" FontFamily="Arial" FontSize="14" Grid.Row="10" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblChauffageCommun" Grid.Row="10" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

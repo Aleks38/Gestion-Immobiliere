@@ -338,7 +338,6 @@ C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\Npgsql.E
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\WPF-Exo.csproj.AssemblyReference.cache
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\BienView.g.cs
-C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\AppartementAffciherDetail.g.cs
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienAfficherDetail.g.cs
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienDetailView.g.cs
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BoxAfficherDetail.g.cs
@@ -359,7 +358,6 @@ C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\WPF-Exo_
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\WPF-Exo_MarkupCompile.lref
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\BienView.baml
-C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\AppartementAffciherDetail.baml
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienAfficherDetail.baml
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BienDetailView.baml
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\BoxAfficherDetail.baml
@@ -386,3 +384,16 @@ C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\refint\W
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\WPF-Exo.pdb
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\WPF-Exo.genruntimeconfig.cache
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\ref\WPF-Exo.dll
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BienDoModify.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BienModifyView.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BoxDoModify.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BienDoModify.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BienModifyView.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\BoxDoModify.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\AppartementAfficherDetail.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\AppartementDoModify.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\MaisonDoModify.g.cs
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\AppartementAfficherDetail.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\AppartementDoModify.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\MaisonDoModify.baml
+C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Details\Modify\HabitationDoModify.g.cs

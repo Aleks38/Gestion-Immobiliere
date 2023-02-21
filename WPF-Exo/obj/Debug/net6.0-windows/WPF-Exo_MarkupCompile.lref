@@ -2,7 +2,6 @@
 
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\MainWindow.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\BienView.xaml;;
-FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\AppartementAffciherDetail.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\BienAfficherDetail.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\BienDetailView.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\BoxAfficherDetail.xaml;;
@@ -18,4 +17,11 @@ FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\PrestataireView.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\PretView.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Subviews\BienSingleView.xaml;;
 FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Subviews\ListBienView.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\BienDoModify.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\BienModifyView.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\BoxDoModify.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\AppartementAfficherDetail.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\AppartementDoModify.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\MaisonDoModify.xaml;;
+FC:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\Views\Details\Modify\HabitationDoModify.xaml;;
 

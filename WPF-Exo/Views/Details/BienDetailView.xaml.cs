@@ -13,10 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_Exo.Data.Models;
+using WPF_Exo.Views.Details.Modify;
 using WPF_Exo.Views.Subviews;
 using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
+using WPF_TP.Views;
 
 namespace WPF_Exo.Views.Details
 {
@@ -50,7 +52,7 @@ namespace WPF_Exo.Views.Details
             }
             else if (bien is Appartement)
             {
-                this.frmDetailBien.Navigate(new AppartementAffciherDetail((Appartement)bien));
+                this.frmDetailBien.Navigate(new AppartementAfficherDetail((Appartement)bien));
             }
             else if (bien is Maison)
             {
@@ -67,7 +69,7 @@ namespace WPF_Exo.Views.Details
 
         private void btnModifier(object sender, RoutedEventArgs e)
         {
-
+            this.frmDetailBien.Navigate(new BienModifyView(IdBien));
         }
 
         private void btnSupp(object sender, RoutedEventArgs e)

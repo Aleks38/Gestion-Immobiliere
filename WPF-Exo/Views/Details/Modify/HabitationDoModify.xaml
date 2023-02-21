@@ -1,0 +1,47 @@
+﻿<Page x:Class="WPF_Exo.Views.Details.Modify.HabitationDoModify"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Details.Modify"
+      mc:Ignorable="d" 
+      d:DesignHeight="266" d:DesignWidth="400"
+      Title="HabitationDoModify">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="FrmBienAfficherModif" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Navigated="FrmBienAfficherModif_Navigated"/>
+
+        <TextBlock Text="Nombre de pièce" FontFamily="Arial" FontSize="14" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrPiece" Grid.Row="5" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNbrPiece" Grid.Row="5" Grid.Column="1" Text="" VerticalAlignment="Center"/>
+        
+        <TextBlock Text="Nombre de chambre" FontFamily="Arial" FontSize="14" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrChambre" Grid.Row="6" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNbrChambre" Grid.Row="6" Grid.Column="1" Text="" VerticalAlignment="Center"/>
+        
+        <TextBlock Text="Nombre de cave" FontFamily="Arial" FontSize="14" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrCave" Grid.Row="7" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNbrCave" Grid.Row="7" Grid.Column="1" Text="" VerticalAlignment="Center"/>
+        
+        <TextBlock Text="Nombre de parking" FontFamily="Arial" FontSize="14" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label x:Name="lblNbrParking" Grid.Row="8" Grid.Column="1" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNbrParking" Grid.Row="8" Grid.Column="1" Text="" VerticalAlignment="Center"/>
+
+    </Grid>
+</Page>
