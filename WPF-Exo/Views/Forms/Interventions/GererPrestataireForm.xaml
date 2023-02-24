@@ -44,7 +44,7 @@
         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Adresse" VerticalAlignment="Center" FontSize="16"/>
         <TextBox x:Name="txtBxAdresse" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" Margin="10,0,10,0"/>
 
-        <Button Content="Ajouter" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="Button_Click" />
+        <Button  x:Name="btnAjouter" Content="Ajouter" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnAjouter_Click" />
 
 
     </Grid>

@@ -82,6 +82,9 @@
     <Compile Update="Views\Subviews\Interventions\ListInterventionsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Subviews\Prestataires\ListPrestatairesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Subviews\Pret\ListPretsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -175,6 +178,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Subviews\Interventions\ListInterventionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Subviews\Prestataires\ListPrestatairesView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Subviews\Pret\ListPretsView.xaml">

@@ -20,11 +20,13 @@ namespace WPF_Exo.Views.Forms.Interventions
     /// </summary>
     public partial class GererInterventionsAdd : Page
     {
-        Frame frame;
-        public GererInterventionsAdd(Frame frame)
+        Frame frmListView;
+        Frame frmGererList;
+        public GererInterventionsAdd(Frame frmListView, Frame frmGererList)
         {
             InitializeComponent();
-            this.frame = frame;
+            this.frmListView = frmListView;
+            this.frmGererList = frmGererList;
 
             frmGerer.Navigate(new GererPrestataireForm());
         }
@@ -37,7 +39,7 @@ namespace WPF_Exo.Views.Forms.Interventions
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            this.frame.Navigate(new GererPrestataireAdd(frame));
+            this.frmGererList.Navigate(new GererPrestataireAdd(frmListView, frmGererList));
         }
     }
 }

@@ -423,3 +423,5 @@ C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windo
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Forms\Prets\GererPretsForm.baml
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\PretsView.baml
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Subviews\Pret\ListPretsView.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Subviews\Prestataires\ListPrestatairesView.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Subviews\Prestataires\ListPrestatairesView.baml

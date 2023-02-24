@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Subviews.Interventions;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Forms.Interventions
 {
@@ -26,9 +28,16 @@ namespace WPF_Exo.Views.Forms.Interventions
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
+            string raisonSociale = txtBxRaisonSoc.Text;
+            string nom = txtBxNom.Text;
+            string prenom = txtBxPrenom.Text;
+            string telephone = txtBxTelephone.Text;
+            string adresse = txtBxAdresse.Text;
+            List<Intervention> listIntervention = new List<Intervention>();
 
+            Prestataire prestataire = new Prestataire(raisonSociale, nom, prenom, telephone, adresse, listIntervention);
         }
     }
 }

@@ -15,31 +15,26 @@ using System.Windows.Shapes;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
-namespace WPF_Exo.Views.Subviews.Interventions
+namespace WPF_Exo.Views.Subviews.Prestataires
 {
     /// <summary>
-    /// Logique d'interaction pour ListInterventionsView.xaml
+    /// Logique d'interaction pour ListPrestatairesView.xaml
     /// </summary>
-    public partial class ListInterventionsView : Page
+    public partial class ListPrestatairesView : Page
     {
-        public ListInterventionsView()
+        public ListPrestatairesView()
         {
             InitializeComponent();
 
             ImoContext ctx = ImoContext.getInstance();
 
-            foreach (Intervention intervention in ctx.Intervention)
+            foreach (Prestataire prestataire in ctx.Prestataires)
             {
-                this.listViewInterventions.Items.Add(intervention);
+                this.listViewPrestataires.Items.Add(prestataire);
             }
         }
 
-        private void listViewInterventions_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void listViewInterventions_DoubleClick(object sender, SelectionChangedEventArgs e)
+        private void listViewPrestataire_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
