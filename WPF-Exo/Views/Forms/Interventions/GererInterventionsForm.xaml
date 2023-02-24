@@ -1,0 +1,49 @@
+﻿<Page x:Class="WPF_Exo.Views.Forms.Interventions.GererInterventionsForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Forms.Interventions"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="GererInterventionsForm">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Ajouter une intervention" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="cmbBoxNomBien" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Width="250" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Prestataire" VerticalAlignment="Center" FontSize="16"/>
+        <ComboBox x:Name="cmbBoxNomPresta" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Width="250" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Date" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtBxSurface" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Width="250"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Montant TTC" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtBxMontant" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" Margin="10,0,10,0"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Information" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtBxInformation" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Center" Height="80" Margin="10,0,10,0"/>
+
+        <Button x:Name="btnAjouter" Content="Ajouter" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnAjouter_Click"/>
+
+    </Grid>
+</Page>

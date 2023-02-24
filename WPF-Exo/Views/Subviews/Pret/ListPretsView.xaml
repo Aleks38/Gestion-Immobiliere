@@ -1,0 +1,52 @@
+﻿<Page x:Class="WPF_Exo.Views.Subviews.Pret.ListPretsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Subviews.Pret"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="ListPretsView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblIntervntions" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" Content="Mes Prêts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
+
+        <ListView x:Name="listViewInterventions" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="9" d:ItemsSource="{d:SampleData ItemCount=10}" SelectionChanged="listViewInterventions_SelectionChanged">
+            <!--<ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Bien" Width="125" DisplayMemberBinding="{Binding Bien}" />
+                    <GridViewColumn Header="Prestataire" Width="80" DisplayMemberBinding="{Binding Prestataire}" />
+                    <GridViewColumn Header="Date" Width="80" DisplayMemberBinding="{Binding Date}" />
+                </GridView>
+            </ListView.View>-->
+        </ListView>
+    </Grid>
+</Page>

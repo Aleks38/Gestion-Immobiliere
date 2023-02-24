@@ -11,8 +11,8 @@
     <Grid>
         <Button x:Name="btnAccueil" Content="Accueil" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Click="btnAccueil_Click" Height="23"/>
         <Button x:Name="btnBiens" Content="Biens" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Top" Height="23" Width="57" Click="btnBiens_Click"/>
-        <Button x:Name="btnPret" Content="Prêts" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Top" Height="24" Width="48" Click="btnPret_Click"/>
-        <Button x:Name="btnPrestataire" Content="Preatstaire" HorizontalAlignment="Left" Margin="251,1,0,0" VerticalAlignment="Top" Click="btnPrestataire_Click" Height="24" Width="62"/>
+        <Button x:Name="btnInterventions" Content="Interventions" HorizontalAlignment="Left" Margin="175,1,0,0" VerticalAlignment="Top" Click="btnInterventions_Click" Height="24" Width="73"/>
+        <Button x:Name="btnPret" Content="Prêts" HorizontalAlignment="Left" Margin="276,1,0,0" VerticalAlignment="Top" Height="24" Width="48" Click="btnPret_Click"/>
         <Frame x:Name="MainFrame" Margin="0,25,0,0" Navigated="MainFrame_Navigated"/>
     </Grid>
 </Page>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views;
 
 namespace WPF_TP.Views
 {
@@ -33,12 +34,7 @@ namespace WPF_TP.Views
 
         private void btnPret_Click(object sender, RoutedEventArgs e)
         {
-            this.MainFrame.Navigate(new PretView());
-        }
-
-        private void btnPrestataire_Click(object sender, RoutedEventArgs e)
-        {
-            this.MainFrame.Navigate(new PrestataireView());
+            this.MainFrame.Navigate(new PretsView());
         }
 
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
@@ -49,6 +45,12 @@ namespace WPF_TP.Views
         private void btnAccueil_Click(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(new HomeView());
+        }
+
+        private void btnInterventions_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainFrame.Navigate(new InterventionsView());
+
         }
     }
 }

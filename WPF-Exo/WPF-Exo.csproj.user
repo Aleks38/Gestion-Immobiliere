@@ -7,37 +7,82 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Details\AppartementAffciherDetail.xaml.cs">
+    <Compile Update="Views\Detail\Biens\AppartementAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Details\BienAfficherDetail.xaml.cs">
+    <Compile Update="Views\Detail\Biens\BienAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Details\BienDetailView.xaml.cs">
+    <Compile Update="Views\Detail\Biens\BienDetailView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Details\BoxAfficherDetail.xaml.cs">
+    <Compile Update="Views\Detail\Biens\BoxAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Details\HabitationAfficherDetail.xaml.cs">
+    <Compile Update="Views\Detail\Biens\HabitationAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Details\MaisonAfficherDetail.xaml.cs">
+    <Compile Update="Views\Detail\Biens\MaisonAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Forms\GererAppartementForm.xaml.cs">
+    <Compile Update="Views\Forms\Interventions\GererInterventionsAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Forms\GererBienForm.xaml.cs">
+    <Compile Update="Views\Forms\Interventions\GererInterventionsForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Forms\GererBoxForm.xaml.cs">
+    <Compile Update="Views\Forms\Interventions\GererPrestataireAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Forms\GererMaisonForm.xaml.cs">
+    <Compile Update="Views\Forms\Interventions\GererPrestataireForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Subviews\BienSingleView.xaml.cs">
+    <Compile Update="Views\Forms\Prets\GererPretsForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\InterventionsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\AppartementDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\BienDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\BienModifyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\BoxDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\HabitationDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Biens\MaisonDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Biens\GererAppartementForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Biens\GererBienForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Biens\GererBoxForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Biens\GererMaisonForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PretsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Subviews\Biens\BienSingleView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Subviews\Interventions\ListInterventionsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Subviews\Pret\ListPretsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -48,22 +93,58 @@
     <Page Update="Views\BienView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\AppartementAffciherDetail.xaml">
+    <Page Update="Views\Detail\Biens\AppartementAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\BienAfficherDetail.xaml">
+    <Page Update="Views\Detail\Biens\BienAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\BienDetailView.xaml">
+    <Page Update="Views\Detail\Biens\BienDetailView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\BoxAfficherDetail.xaml">
+    <Page Update="Views\Detail\Biens\BoxAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\HabitationAfficherDetail.xaml">
+    <Page Update="Views\Detail\Biens\HabitationAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Details\MaisonAfficherDetail.xaml">
+    <Page Update="Views\Detail\Biens\MaisonAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\Interventions\GererInterventionsAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\Interventions\GererInterventionsForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\Interventions\GererPrestataireAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\Interventions\GererPrestataireForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Forms\Prets\GererPretsForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InterventionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\AppartementDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\BienDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\BienModifyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\BoxDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\HabitationDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Biens\MaisonDoModify.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HomeView.xaml">
@@ -72,28 +153,31 @@
     <Page Update="Views\NavigationView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\PrestataireView.xaml">
+    <Page Update="Views\Forms\Biens\GererAppartementForm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\PretView.xaml">
+    <Page Update="Views\Forms\Biens\GererBienForm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Forms\GererAppartementForm.xaml">
+    <Page Update="Views\Forms\Biens\GererBoxForm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Forms\GererBienForm.xaml">
+    <Page Update="Views\Forms\Biens\GererMaisonForm.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Forms\GererBoxForm.xaml">
+    <Page Update="Views\PretsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Forms\GererMaisonForm.xaml">
+    <Page Update="Views\Subviews\Biens\BienSingleView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Subviews\BienSingleView.xaml">
+    <Page Update="Views\Subviews\Biens\ListBienView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Subviews\ListBienView.xaml">
+    <Page Update="Views\Subviews\Interventions\ListInterventionsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Subviews\Pret\ListPretsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
