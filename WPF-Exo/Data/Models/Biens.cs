@@ -16,6 +16,15 @@ namespace WPF_TP.Data.Models
         private Pret? pret;
         private List<Intervention>? listIntervention;
 
+        public int BiensId { get; set; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Adresse { get => adresse; set => adresse = value; }
+        public int Valeur { get => valeur; set => valeur = value; }
+        public int Surface { get => surface; set => surface = value; }
+        public List<Contrat>? ListContrat { get => listContrat; set => listContrat = value; }
+        public Pret? Pret { get => pret; set => pret = value; }
+        public List<Intervention>? ListIntervention { get => listIntervention; set => listIntervention = value; }
+
         public Biens(string nom, string adresse, int valeur, int surface)
         {
             this.nom = nom;
@@ -23,14 +32,6 @@ namespace WPF_TP.Data.Models
             this.valeur = valeur;
             this.surface = surface;
         }
-        public int BiensId { get; set; }
-        public string Nom { get => nom; set => nom = value; }
-        public string Adresse { get => adresse; set => adresse = value; }
-        public int Valeur { get => valeur; set => valeur = value; }
-        public int Surface { get => surface; set => surface = value; }
-        internal List<Contrat> ListContrat { get => listContrat; set => listContrat = value; }
-        internal Pret Pret { get => pret; set => pret = value; }
-        internal List<Intervention> ListIntervention { get => listIntervention; set => listIntervention = value; }
 
         public int benefNet()
         {

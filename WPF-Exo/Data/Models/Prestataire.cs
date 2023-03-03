@@ -11,7 +11,7 @@ namespace WPF_TP.Data.Models
         private string prenom;
         private string telephone;
         private string adresse;
-        private List<Intervention>? listIntervention = new List<Intervention>();
+        private List<Intervention> listIntervention = new List<Intervention>();
 
         public Prestataire(string raisonSociale, string nom, string prenom, string telephone, string adresse, List<Intervention> listIntervention)
         {

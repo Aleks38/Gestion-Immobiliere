@@ -23,16 +23,44 @@ namespace WPF_Exo.Views.Subviews.Interventions
     /// </summary>
     public partial class ListInterventionsView : Page
     {
+
+        private class ListInterventionRow
+        {
+            String NomBien { get; set; }
+            String RaisonSocialePrestataire { get; set; }
+            String DateIntervention { get; set; }
+            
+            public ListInterventionRow(String NomBien, String RaisonSocialePrestataire, String DateIntervention)
+            {
+                this.NomBien = NomBien;
+                this.RaisonSocialePrestataire = RaisonSocialePrestataire;
+                this.DateIntervention = DateIntervention;
+            }
+        }
+
+
         public Frame frmGerer;
         public ListInterventionsView(Frame frmGerer)
         {
             InitializeComponent();
+            this.refreshList();
+        }
 
+        public void refreshList()
+        {
             ImoContext ctx = ImoContext.getInstance();
+            ImoContext ctx2 = new ImoContext();
 
-            foreach (Intervention intervention in ctx.Intervention)
+            foreach (Intervention intervention in ctx2.Intervention)
             {
-                this.listViewInterventions.Items.Add(intervention);
+                int bienId = intervention.BienId;
+                
+                Biens bien = ctx.Biens.Find(bienId);
+                //if (bien != null)
+                //{
+                //    ListInterventionRow row = new ListInterventionRow(bien.Nom, intervention.ListPresta[0].RaisonSociale, intervention.DateIntervention);
+                //    this.listViewInterventions.Items.Add(row);
+                //}
             }
         }
 

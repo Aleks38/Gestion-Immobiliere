@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Contrat
+    public class Contrat
     {
         private int loyer;
         private string dateDebut;

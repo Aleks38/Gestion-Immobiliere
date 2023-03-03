@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Pret
+    public class Pret
     {
         private int apport;
         private int mensualite;

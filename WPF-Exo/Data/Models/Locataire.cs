@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Locataire
+    public class Locataire
     {
         private string nom;
         private string prenom;

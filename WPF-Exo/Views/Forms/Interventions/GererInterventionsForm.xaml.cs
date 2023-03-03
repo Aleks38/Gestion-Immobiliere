@@ -31,7 +31,7 @@ namespace WPF_Exo.Views.Forms.Interventions
         {
             InitializeComponent();
             this.Observers = new List<IObserver>();
-            
+
 
             ImoContext ctx = ImoContext.getInstance();
 
@@ -56,10 +56,10 @@ namespace WPF_Exo.Views.Forms.Interventions
 
             List<Prestataire> listPresta = new List<Prestataire>();
             listPresta.Add(thePrestaire);
-            
-            Intervention addIntervention = new Intervention(dateIntervention, montantTTC, information, listPresta, theBien);
+
+
             ImoContext ctx = new ImoContext();
-            ctx.Intervention.Add(addIntervention);
+            ctx.Intervention.Add(new Intervention(dateIntervention, montantTTC, information, listPresta, theBien.BiensId));
             ctx.SaveChanges();
             this.notifyObservers();
 
@@ -70,6 +70,7 @@ namespace WPF_Exo.Views.Forms.Interventions
             {
                 obs.update();
             }
+
         }
     }
 }

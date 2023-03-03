@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\App.xaml
 342117848048
 
-601236740081
+70-1543674394
 208-822190879
 MainWindow.xaml;Views\BienView.xaml;Views\Detail\Biens\AppartementAfficherDetail.xaml;Views\Detail\Biens\BienAfficherDetail.xaml;Views\Detail\Biens\BienDetailView.xaml;Views\Detail\Biens\BoxAfficherDetail.xaml;Views\Detail\Biens\HabitationAfficherDetail.xaml;Views\Detail\Biens\MaisonAfficherDetail.xaml;Views\Detail\Interventions\InterventionAfficherDetail.xaml;Views\Detail\Prestataires\PrestataireAfficherDetail.xaml;Views\Forms\Biens\GererAppartementForm.xaml;Views\Forms\Biens\GererBienForm.xaml;Views\Forms\Biens\GererBoxForm.xaml;Views\Forms\Biens\GererMaisonForm.xaml;Views\Forms\Interventions\GererInterventionsAdd.xaml;Views\Forms\Interventions\GererInterventionsForm.xaml;Views\Forms\Interventions\GererPrestataireAdd.xaml;Views\Forms\Interventions\GererPrestataireForm.xaml;Views\Forms\Prets\GererPretsForm.xaml;Views\HomeView.xaml;Views\InterventionsView.xaml;Views\Modify\Biens\AppartementDoModify.xaml;Views\Modify\Biens\BienDoModify.xaml;Views\Modify\Biens\BienModifyView.xaml;Views\Modify\Biens\BoxDoModify.xaml;Views\Modify\Biens\HabitationDoModify.xaml;Views\Modify\Biens\MaisonDoModify.xaml;Views\NavigationView.xaml;Views\PretsView.xaml;Views\Subviews\Biens\BienSingleView.xaml;Views\Subviews\Biens\ListBienView.xaml;Views\Subviews\Interventions\ListInterventionsView.xaml;Views\Subviews\Prestataires\ListPrestatairesView.xaml;Views\Subviews\Pret\ListPretsView.xaml;
 

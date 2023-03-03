@@ -22,6 +22,21 @@ namespace WPF_Exo.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("InterventionPrestataire", b =>
+                {
+                    b.Property<int>("ListInterventionInterventionId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ListPrestaPrestataireId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ListInterventionInterventionId", "ListPrestaPrestataireId");
+
+                    b.HasIndex("ListPrestaPrestataireId");
+
+                    b.ToTable("InterventionPrestataire");
+                });
+
             modelBuilder.Entity("WPF_TP.Data.Models.Biens", b =>
                 {
                     b.Property<int>("BiensId")
@@ -38,6 +53,9 @@ namespace WPF_Exo.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int?>("PretId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Surface")
                         .HasColumnType("integer");
 
@@ -45,6 +63,8 @@ namespace WPF_Exo.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("BiensId");
+
+                    b.HasIndex("PretId");
 
                     b.ToTable("Biens");
                 });
@@ -86,6 +106,12 @@ namespace WPF_Exo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("InterventionId"));
 
+                    b.Property<int>("BienId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("BiensId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("DateIntervention")
                         .IsRequired()
                         .HasColumnType("text");
@@ -97,17 +123,9 @@ namespace WPF_Exo.Migrations
                     b.Property<int>("MontantTTC")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("PrestataireId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UnBienBiensId")
-                        .HasColumnType("integer");
-
                     b.HasKey("InterventionId");
 
-                    b.HasIndex("PrestataireId");
-
-                    b.HasIndex("UnBienBiensId");
+                    b.HasIndex("BiensId");
 
                     b.ToTable("Intervention");
                 });
@@ -259,10 +277,34 @@ namespace WPF_Exo.Migrations
                     b.ToTable("Maison", (string)null);
                 });
 
+            modelBuilder.Entity("InterventionPrestataire", b =>
+                {
+                    b.HasOne("WPF_TP.Data.Models.Intervention", null)
+                        .WithMany()
+                        .HasForeignKey("ListInterventionInterventionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WPF_TP.Data.Models.Prestataire", null)
+                        .WithMany()
+                        .HasForeignKey("ListPrestaPrestataireId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("WPF_TP.Data.Models.Biens", b =>
+                {
+                    b.HasOne("WPF_TP.Data.Models.Pret", "Pret")
+                        .WithMany()
+                        .HasForeignKey("PretId");
+
+                    b.Navigation("Pret");
+                });
+
             modelBuilder.Entity("WPF_TP.Data.Models.Contrat", b =>
                 {
                     b.HasOne("WPF_TP.Data.Models.Biens", "UnBien")
-                        .WithMany()
+                        .WithMany("ListContrat")
                         .HasForeignKey("UnBienBiensId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -272,17 +314,9 @@ namespace WPF_Exo.Migrations
 
             modelBuilder.Entity("WPF_TP.Data.Models.Intervention", b =>
                 {
-                    b.HasOne("WPF_TP.Data.Models.Prestataire", null)
+                    b.HasOne("WPF_TP.Data.Models.Biens", null)
                         .WithMany("ListIntervention")
-                        .HasForeignKey("PrestataireId");
-
-                    b.HasOne("WPF_TP.Data.Models.Biens", "UnBien")
-                        .WithMany()
-                        .HasForeignKey("UnBienBiensId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UnBien");
+                        .HasForeignKey("BiensId");
                 });
 
             modelBuilder.Entity("WPF_TP.Data.Models.Box", b =>
@@ -321,8 +355,10 @@ namespace WPF_Exo.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("WPF_TP.Data.Models.Prestataire", b =>
+            modelBuilder.Entity("WPF_TP.Data.Models.Biens", b =>
                 {
+                    b.Navigation("ListContrat");
+
                     b.Navigation("ListIntervention");
                 });
 #pragma warning restore 612, 618
