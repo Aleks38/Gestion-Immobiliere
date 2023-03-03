@@ -38,8 +38,13 @@ namespace WPF_Exo.Views.Subviews.Interventions
 
         private void listViewInterventions_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(this.frmGerer);
-            this.frmGerer.Navigate(interventionDetail);
+            Intervention theIntervention = (Intervention)(sender as ListBox).SelectedItem;
+            if (theIntervention != null)
+            {
+                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(theIntervention);
+                frmGerer.Navigate(interventionDetail);
+            }
+            
         }
 
         private void listViewInterventions_DoubleClick(object sender, SelectionChangedEventArgs e)

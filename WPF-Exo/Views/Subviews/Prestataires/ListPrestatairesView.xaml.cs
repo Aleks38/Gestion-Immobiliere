@@ -24,7 +24,8 @@ namespace WPF_Exo.Views.Subviews.Prestataires
     /// </summary>
     public partial class ListPrestatairesView : Page
     {
-        public ListPrestatairesView()
+        Frame frmGerer;
+        public ListPrestatairesView(Frame frmGerer)
         {
             InitializeComponent();
 
@@ -43,7 +44,7 @@ namespace WPF_Exo.Views.Subviews.Prestataires
             {
                 PrestataireAfficherDetail prestataireDetail = new PrestataireAfficherDetail(prestataire);
 
-                //this.bienRightFrame.Navigate(bienDetail);
+                this.frmGerer.Navigate(prestataireDetail);
             }
         }
     }

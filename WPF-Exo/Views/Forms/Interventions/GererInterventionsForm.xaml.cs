@@ -37,12 +37,12 @@ namespace WPF_Exo.Views.Forms.Interventions
 
             foreach (Biens bien in ctx.Biens)
             {
-                cmbBoxNomBien.Items.Add(bien.Nom);
+                cmbBoxNomBien.Items.Add(bien);
             }
 
             foreach (Prestataire prestataire in ctx.Prestataires)
             {
-                cmbBoxNomPresta.Items.Add(prestataire.Nom);
+                cmbBoxNomPresta.Items.Add(prestataire);
             }
         }
 
@@ -51,12 +51,15 @@ namespace WPF_Exo.Views.Forms.Interventions
             string dateIntervention = txtBxDate.Text;
             int montantTTC = int.Parse(txtBxMontant.Text);
             string information = txtBxInformation.Text;
+            Biens theBien = (Biens)cmbBoxNomBien.SelectedItem;
+            Prestataire thePrestaire = (Prestataire)cmbBoxNomPresta.SelectedItem;
 
             List<Prestataire> listPresta = new List<Prestataire>();
-            //Biens unBien =  ;
-            //Intervention addIntervention = new Intervention(dateIntervention, montantTTC, information, listPresta, unBien);
+            listPresta.Add(thePrestaire);
+            
+            Intervention addIntervention = new Intervention(dateIntervention, montantTTC, information, listPresta, theBien);
             ImoContext ctx = new ImoContext();
-            //ctx.Intervention.Add(addIntervention);
+            ctx.Intervention.Add(addIntervention);
             ctx.SaveChanges();
             this.notifyObservers();
 

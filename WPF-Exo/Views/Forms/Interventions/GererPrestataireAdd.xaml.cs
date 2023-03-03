@@ -42,7 +42,7 @@ namespace WPF_Exo.Views.Forms.Interventions
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.frmGererInter.Navigate(new GererInterventionsAdd(frmListView, frmGererInter));
-            this.frmListView.Navigate(new ListPrestatairesView());
+            this.frmListView.Navigate(new ListPrestatairesView(frmGererInter));
 
         }
     }

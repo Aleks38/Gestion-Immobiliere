@@ -29,10 +29,10 @@
         <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Ajouter une intervention" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
-        <ComboBox x:Name="cmbBoxNomBien" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Width="250" Height="30"/>
+        <ComboBox x:Name="cmbBoxNomBien" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" DisplayMemberPath="Nom" FontFamily="Arial" Width="250" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Prestataire" VerticalAlignment="Center" FontSize="16"/>
-        <ComboBox x:Name="cmbBoxNomPresta" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Width="250" Height="30"/>
+        <ComboBox x:Name="cmbBoxNomPresta" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" DisplayMemberPath="Nom" FontFamily="Arial" Width="250" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Date" VerticalAlignment="Center" FontSize="16"/>
         <TextBox x:Name="txtBxDate" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Width="250"/>
