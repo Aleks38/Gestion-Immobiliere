@@ -57,11 +57,13 @@ namespace WPF_Exo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ContratId"));
 
-                    b.Property<DateTime>("DateDebut")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("DateDebut")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<DateTime>("DateFin")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("DateFin")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("Loyer")
                         .HasColumnType("integer");

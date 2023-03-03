@@ -14,7 +14,7 @@ namespace WPF_Exo.Views
         {
             InitializeComponent();
             
-            this.frmListInterventions.Navigate(new ListInterventionsView());
+            this.frmListInterventions.Navigate(new ListInterventionsView(this.frmGerer));
             this.frmGerer.Navigate(new GererPrestataireAdd(this.frmListInterventions,this.frmGerer));
         }
 

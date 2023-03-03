@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Intervention
+    public class Intervention
     {
         private string dateIntervention;
         private int montantTTC;
@@ -21,10 +21,12 @@ namespace WPF_TP.Data.Models
             UnBien = unBien; 
             
         }
+
         public Intervention()
         {
 
         }
+
         public int InterventionId { get; set; }
         public string DateIntervention { get => dateIntervention; set => dateIntervention = value; }
         public int MontantTTC { get => montantTTC; set => montantTTC = value; }

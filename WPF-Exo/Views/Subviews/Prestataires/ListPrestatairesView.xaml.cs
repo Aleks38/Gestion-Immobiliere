@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Detail.Prestataires;
+using WPF_Exo.Views.Details;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -36,7 +38,13 @@ namespace WPF_Exo.Views.Subviews.Prestataires
 
         private void listViewPrestataire_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Prestataire prestataire = (Prestataire)(sender as ListBox).SelectedItem;
+            if (prestataire != null)
+            {
+                PrestataireAfficherDetail prestataireDetail = new PrestataireAfficherDetail(prestataire);
 
+                //this.bienRightFrame.Navigate(bienDetail);
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Detail.Interventions;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -22,7 +23,8 @@ namespace WPF_Exo.Views.Subviews.Interventions
     /// </summary>
     public partial class ListInterventionsView : Page
     {
-        public ListInterventionsView()
+        public Frame frmGerer;
+        public ListInterventionsView(Frame frmGerer)
         {
             InitializeComponent();
 
@@ -36,7 +38,8 @@ namespace WPF_Exo.Views.Subviews.Interventions
 
         private void listViewInterventions_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(this.frmGerer);
+            this.frmGerer.Navigate(interventionDetail);
         }
 
         private void listViewInterventions_DoubleClick(object sender, SelectionChangedEventArgs e)

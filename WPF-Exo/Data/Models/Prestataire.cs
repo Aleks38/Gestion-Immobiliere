@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_TP.Data.Models
 {
-    class Prestataire
+    public class Prestataire
     {
         private string raisonSociale;
         private string nom;
@@ -23,10 +23,12 @@ namespace WPF_TP.Data.Models
             ListIntervention = listIntervention;
 
         }
+
         public Prestataire()
         {
 
         }
+
         public int PrestataireId { get; set; }
         public string RaisonSociale { get => raisonSociale; set => raisonSociale = value; }
         public string Nom { get => nom; set => nom = value; }

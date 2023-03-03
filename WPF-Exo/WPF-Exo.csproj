@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Views\Detail\Interventions\" />
     <Folder Include="Views\Detail\Prets\" />
     <Folder Include="Views\Forms\Interventions\Prestataire\" />
   </ItemGroup>

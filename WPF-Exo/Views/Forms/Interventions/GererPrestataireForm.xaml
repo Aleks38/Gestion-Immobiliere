@@ -26,7 +26,7 @@
         </Grid.RowDefinitions>
 
 
-        <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Ajouter une prestataire" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
+        <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Ajouter un prestataire" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
 
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Raison sociale" VerticalAlignment="Center" FontSize="16"/>

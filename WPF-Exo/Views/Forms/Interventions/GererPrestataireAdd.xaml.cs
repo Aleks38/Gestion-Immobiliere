@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Subviews.Interventions;
+using WPF_Exo.Views.Subviews.Prestataires;
 
 namespace WPF_Exo.Views.Forms.Interventions
 {
@@ -40,6 +42,7 @@ namespace WPF_Exo.Views.Forms.Interventions
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.frmGererInter.Navigate(new GererInterventionsAdd(frmListView, frmGererInter));
+            this.frmListView.Navigate(new ListPrestatairesView());
 
         }
     }

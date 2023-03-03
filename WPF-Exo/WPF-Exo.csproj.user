@@ -25,6 +25,12 @@
     <Compile Update="Views\Detail\Biens\MaisonAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Detail\Interventions\InterventionAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Detail\Prestataires\PrestataireAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Forms\Interventions\GererInterventionsAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -112,6 +118,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Detail\Biens\MaisonAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Detail\Interventions\InterventionAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Detail\Prestataires\PrestataireAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Forms\Interventions\GererInterventionsAdd.xaml">

@@ -35,7 +35,7 @@
         <ComboBox x:Name="cmbBoxNomPresta" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" Width="250" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Date" VerticalAlignment="Center" FontSize="16"/>
-        <TextBox x:Name="txtBxSurface" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Width="250"/>
+        <TextBox x:Name="txtBxDate" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Width="250"/>
 
         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Montant TTC" VerticalAlignment="Center" FontSize="16"/>
         <TextBox x:Name="txtBxMontant" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30" Margin="10,0,10,0"/>

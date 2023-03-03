@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -21,12 +22,16 @@ namespace WPF_Exo.Views.Forms.Interventions
     /// Logique d'interaction pour GererInterventionsForm.xaml
     /// 
     /// </summary>
-    public partial class GererInterventionsForm : Page
+    public partial class GererInterventionsForm : Page, IObservable
     {
         public InterventionsView interventions;
+        public List<IObserver> Observers { get; set; }
+
         public GererInterventionsForm()
         {
             InitializeComponent();
+            this.Observers = new List<IObserver>();
+            
 
             ImoContext ctx = ImoContext.getInstance();
 
@@ -43,7 +48,25 @@ namespace WPF_Exo.Views.Forms.Interventions
 
         private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
+            string dateIntervention = txtBxDate.Text;
+            int montantTTC = int.Parse(txtBxMontant.Text);
+            string information = txtBxInformation.Text;
 
+            List<Prestataire> listPresta = new List<Prestataire>();
+            //Biens unBien =  ;
+            //Intervention addIntervention = new Intervention(dateIntervention, montantTTC, information, listPresta, unBien);
+            ImoContext ctx = new ImoContext();
+            //ctx.Intervention.Add(addIntervention);
+            ctx.SaveChanges();
+            this.notifyObservers();
+
+        }
+        void notifyObservers()
+        {
+            foreach (IObserver obs in Observers)
+            {
+                obs.update();
+            }
         }
     }
 }
