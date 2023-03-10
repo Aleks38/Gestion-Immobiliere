@@ -6,7 +6,7 @@ using WPF_TP.Data.DAL;
 
 namespace WPF_TP.Data.Models
 {
-    public class Biens
+    public abstract class Biens
     {
         private string nom;
         private string adresse;
