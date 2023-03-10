@@ -11,13 +11,12 @@ namespace WPF_TP.Data.Models
         private int duree;
         private DateTime dateDebut;
 
-        public Pret(int apport, int mensualite, int duree, DateTime dateDebut, Biens unBien)
+        public Pret(int apport, int mensualite, int duree, DateTime dateDebut)
         {
             Apport = apport;
             Mensualite = mensualite;
             Duree = duree;
             DateDebut = dateDebut;
-
         }
         public Pret()
         {

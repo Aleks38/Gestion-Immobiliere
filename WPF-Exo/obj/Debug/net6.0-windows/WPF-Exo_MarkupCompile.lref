@@ -8,6 +8,8 @@ FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Biens\Bi
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Biens\BoxAfficherDetail.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Biens\HabitationAfficherDetail.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Biens\MaisonAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Interventions\InterventionAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Prestataires\PrestataireAfficherDetail.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\Biens\GererAppartementForm.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\Biens\GererBienForm.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Forms\Biens\GererBoxForm.xaml;;
@@ -25,13 +27,13 @@ FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Biens\Bi
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Biens\BoxDoModify.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Biens\HabitationDoModify.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Biens\MaisonDoModify.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Interventions\InterventionDoModify.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Modify\Prestataires\PrestataireDoModify.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\NavigationView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\PretsView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Biens\BienSingleView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Biens\ListBienView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Interventions\ListInterventionsView.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Pret\ListPretsView.xaml;;
 FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Prestataires\ListPrestatairesView.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Prestataires\PrestataireAfficherDetail.xaml;;
-FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Detail\Interventions\InterventionAfficherDetail.xaml;;
+FC:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\Views\Subviews\Pret\ListPretsView.xaml;;
 

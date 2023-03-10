@@ -16,7 +16,7 @@ namespace WPF_TP.Data.DAL
         public DbSet<Intervention> Intervention { get; set; }
         public DbSet<Locataire> Locataires { get; set; }
         public DbSet<Prestataire> Prestataires { get; set; }
-        public DbSet<Pret> Prets { get; set; }
+        public DbSet<Pret> Pret { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql("Host=localhost; Database=GestionImmobiliere; Username=postgres; Password=root");
 

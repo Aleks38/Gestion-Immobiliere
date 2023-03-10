@@ -29,22 +29,22 @@
         <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Consulter une intervention" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="36"/>
 
         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Prestataire" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblNomPresta" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblNomPresta" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="37"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Date" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblDate" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblDate" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="36"/>
 
         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Montant TTC" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblMontant" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblMontant" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="36"/>
 
         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Information" VerticalAlignment="Center" FontSize="16"/>
         <Label x:Name="lblInformation" Grid.Row="5" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="80"/>
 
         <Button x:Name="btnSupprimer" Content="Supprimer" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
-        <Button x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
+        <Button x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnModifier_Click"/>
 
     </Grid>
 </Page>

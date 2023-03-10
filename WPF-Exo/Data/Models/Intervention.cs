@@ -9,15 +9,15 @@ namespace WPF_TP.Data.Models
         private string dateIntervention;
         private int montantTTC;
         private string information;
-        private List<Prestataire> listPresta = new List<Prestataire>();
+        private List<int> listPrestaId = new List<int>();
         private int bienId;
 
-        public Intervention(string dateIntervention, int montantTTC, string information, List<Prestataire> listPresta, int bienId)
+        public Intervention(string dateIntervention, int montantTTC, string information, List<int> listPrestaId, int bienId)
         {
             DateIntervention = dateIntervention;
             MontantTTC = montantTTC;
             Information = information;
-            ListPresta = listPresta;
+            ListPrestaId = listPrestaId;
             BienId = bienId;
         }
 
@@ -30,7 +30,7 @@ namespace WPF_TP.Data.Models
         public string DateIntervention { get => dateIntervention; set => dateIntervention = value; }
         public int MontantTTC { get => montantTTC; set => montantTTC = value; }
         public string Information { get => information; set => information = value; }
-        public List<Prestataire> ListPresta { get => listPresta; set => listPresta = value; }
+        public List<int> ListPrestaId { get => listPrestaId; set => listPrestaId = value; }
         public int BienId { get => bienId; set => bienId = value; }
     }
 }

@@ -79,6 +79,12 @@
     <Compile Update="Views\Forms\Biens\GererMaisonForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Modify\Interventions\InterventionDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Modify\Prestataires\PrestataireDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\PretsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -163,6 +169,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Interventions\InterventionDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Prestataires\PrestataireDoModify.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\NavigationView.xaml">

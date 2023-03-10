@@ -22,5 +22,10 @@ namespace WPF_Exo.Views.Detail.Prestataires
         {
             InitializeComponent();
         }
+
+        private void btnModifier_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }

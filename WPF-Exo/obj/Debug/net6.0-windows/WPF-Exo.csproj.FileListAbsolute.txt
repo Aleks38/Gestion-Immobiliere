@@ -429,3 +429,7 @@ C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windo
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Prestataires\PrestataireAfficherDetail.baml
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Interventions\InterventionAfficherDetail.g.cs
 C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Interventions\InterventionAfficherDetail.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Interventions\InterventionDoModify.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prestataires\PrestataireDoModify.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Interventions\InterventionDoModify.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prestataires\PrestataireDoModify.baml

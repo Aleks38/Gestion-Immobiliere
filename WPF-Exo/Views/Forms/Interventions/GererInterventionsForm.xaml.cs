@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
@@ -54,8 +43,8 @@ namespace WPF_Exo.Views.Forms.Interventions
             Biens theBien = (Biens)cmbBoxNomBien.SelectedItem;
             Prestataire thePrestaire = (Prestataire)cmbBoxNomPresta.SelectedItem;
 
-            List<Prestataire> listPresta = new List<Prestataire>();
-            listPresta.Add(thePrestaire);
+            List<int> listPresta = new List<int>();
+            listPresta.Add(thePrestaire.PrestataireId);
 
 
             ImoContext ctx = new ImoContext();

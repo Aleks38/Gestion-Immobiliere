@@ -40,13 +40,13 @@
         <Label x:Name="lblIntervntions" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" Content="Mes Prêts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
 
         <ListView x:Name="listViewInterventions" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="9" d:ItemsSource="{d:SampleData ItemCount=10}" SelectionChanged="listViewInterventions_SelectionChanged">
-            <!--<ListView.View>
+            <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Bien" Width="125" DisplayMemberBinding="{Binding Bien}" />
-                    <GridViewColumn Header="Prestataire" Width="80" DisplayMemberBinding="{Binding Prestataire}" />
-                    <GridViewColumn Header="Date" Width="80" DisplayMemberBinding="{Binding Date}" />
+                    <GridViewColumn Header="Bien" Width="125" DisplayMemberBinding="{Binding nomBien}" />
+                    <GridViewColumn Header="Mensualité" Width="80" DisplayMemberBinding="{Binding Mensualite}" />
+                    <GridViewColumn Header="Montant" Width="80" DisplayMemberBinding="{Binding Montant}" />
                 </GridView>
-            </ListView.View>-->
+            </ListView.View>
         </ListView>
     </Grid>
 </Page>

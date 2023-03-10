@@ -1,0 +1,50 @@
+﻿<Page x:Class="WPF_Exo.Views.Modify.Prestataires.PrestataireDoModify"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Modify.Prestataires"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="PrestataireDoModify">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+
+        <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Modifier un prestataire" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Raison sociale" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtRaisonSoc" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Nom" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtNom" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Prénom" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtPrenom" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Telephone" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtTelephone" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Adresse" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="txtAdresse" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
+        <Button  x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
+        
+
+    </Grid>
+</Page>

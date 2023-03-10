@@ -13,7 +13,7 @@ namespace WPF_TP.Data.Models
         private Biens unBien;
 
 
-        public Contrat(int loyer, string dateDebut, string dateFin, List<Locataire> listLocataire, Biens unBien)
+        public Contrat(int loyer, string dateDebut, string datFin, List<Locataire> listLocataire, Biens unBien)
         {
             Loyer = loyer;
             DateDebut = dateDebut;

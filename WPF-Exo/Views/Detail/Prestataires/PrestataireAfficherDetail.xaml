@@ -30,22 +30,22 @@
 
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Raison sociale" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblRaisonSoc" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblRaisonSoc" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
 
         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Nom" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblNom" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblNom" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="45"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Prénom" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblPrenom" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblPrenom" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
 
         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Telephone" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblTelephone" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblTelephone" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
 
         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Adresse" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblAdresse" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblAdresse" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="45"/>
 
         <Button  x:Name="btnSupprimer" Content="Supprimer" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
-        <Button  x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
+        <Button  x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnModifier_Click"/>
 
     </Grid>
 </Page>

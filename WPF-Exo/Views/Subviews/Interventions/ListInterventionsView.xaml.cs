@@ -24,25 +24,46 @@ namespace WPF_Exo.Views.Subviews.Interventions
     public partial class ListInterventionsView : Page
     {
 
-        private class ListInterventionRow
+        public class ListInterventionRow
         {
-            String NomBien { get; set; }
-            String RaisonSocialePrestataire { get; set; }
-            String DateIntervention { get; set; }
-            
-            public ListInterventionRow(String NomBien, String RaisonSocialePrestataire, String DateIntervention)
+            public String NomBien { get; set; }
+            public String RaisonSocialePrestataire { get; set; }
+            public String DateIntervention { get; set; }
+            public int InterventionId { get; set; }
+
+
+            public ListInterventionRow(String NomBien, String RaisonSocialePrestataire, String DateIntervention, int InterventionId)
             {
                 this.NomBien = NomBien;
                 this.RaisonSocialePrestataire = RaisonSocialePrestataire;
                 this.DateIntervention = DateIntervention;
+                this.InterventionId = InterventionId;
+
             }
         }
-
 
         public Frame frmGerer;
         public ListInterventionsView(Frame frmGerer)
         {
             InitializeComponent();
+            this.frmGerer = frmGerer;
+            ImoContext ctx = ImoContext.getInstance();
+
+            foreach (Intervention intervention in ctx.Intervention)
+            {
+                ImoContext ctx2 = new ImoContext();
+                Biens unBiens = ctx2.Biens.Find(intervention.BienId);
+
+                foreach (int prestataireId in intervention.ListPrestaId)
+                {
+                    ImoContext ctx3 = new ImoContext();
+                    Prestataire prestataire = ctx3.Prestataires.Find(prestataireId);
+
+                    ListInterventionRow interventionRow = new ListInterventionRow(unBiens.Nom, prestataire.RaisonSociale, intervention.DateIntervention, intervention.InterventionId);
+                    this.listViewInterventions.Items.Add(interventionRow);
+                }
+            }
+
             this.refreshList();
         }
 
@@ -66,10 +87,13 @@ namespace WPF_Exo.Views.Subviews.Interventions
 
         private void listViewInterventions_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Intervention theIntervention = (Intervention)(sender as ListBox).SelectedItem;
-            if (theIntervention != null)
+            ListInterventionRow listIntervention = (ListInterventionRow)(sender as ListBox).SelectedItem;
+            if (listIntervention != null)
             {
-                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(theIntervention);
+                ImoContext ctx = ImoContext.getInstance();
+                ctx.Intervention.Find(listIntervention.InterventionId);
+
+                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(ctx.Intervention.Find(listIntervention.InterventionId));
                 frmGerer.Navigate(interventionDetail);
             }
             
