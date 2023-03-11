@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Modify.Prets
 {
@@ -20,9 +21,13 @@ namespace WPF_Exo.Views.Modify.Prets
     /// </summary>
     public partial class PretDoModify : Page
     {
-        public PretDoModify()
+        public PretDoModify(Pret unPret)
         {
             InitializeComponent();
+
+            txtApport.Text = unPret.Apport.ToString();
+            txtMensualite.Text = unPret.Mensualite.ToString();
+            txtDuree.Text = unPret.Duree.ToString();
         }
 
         private void btnModifier_Click(object sender, RoutedEventArgs e)

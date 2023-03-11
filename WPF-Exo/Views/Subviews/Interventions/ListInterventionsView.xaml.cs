@@ -93,7 +93,7 @@ namespace WPF_Exo.Views.Subviews.Interventions
                 ImoContext ctx = ImoContext.getInstance();
                 ctx.Intervention.Find(listIntervention.InterventionId);
 
-                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(ctx.Intervention.Find(listIntervention.InterventionId));
+                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(ctx.Intervention.Find(listIntervention.InterventionId), frmGerer);
                 frmGerer.Navigate(interventionDetail);
             }
             

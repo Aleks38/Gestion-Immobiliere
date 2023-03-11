@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using WPF_Exo.Views.Modify.Prestataires;
 using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Detail.Prestataires
@@ -8,9 +9,14 @@ namespace WPF_Exo.Views.Detail.Prestataires
     /// </summary>
     public partial class PrestataireAfficherDetail : Page
     {
-        public PrestataireAfficherDetail(Prestataire prestataire)
+        Frame frmGerer;
+        Prestataire prestataire;
+        public PrestataireAfficherDetail(Prestataire prestataire, Frame frmGerer)
         {
             InitializeComponent();
+            this.frmGerer = frmGerer;
+            this.prestataire = prestataire;
+
             lblRaisonSoc.Content = prestataire.RaisonSociale;
             lblNom.Content = prestataire.Nom;
             lblPrenom.Content = prestataire.Prenom;
@@ -25,7 +31,7 @@ namespace WPF_Exo.Views.Detail.Prestataires
 
         private void btnModifier_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            this.frmGerer.Navigate(new PrestataireDoModify(prestataire));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Windows.Controls;
+using WPF_Exo.Views.Modify.Interventions;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -9,10 +10,15 @@ namespace WPF_Exo.Views.Detail.Interventions
     /// </summary>
     public partial class InterventionAfficherDetail : Page
     {
-        public InterventionAfficherDetail(Intervention intervention)
+        Frame frmGerer;
+        Intervention intervention;
+        public InterventionAfficherDetail(Intervention intervention, Frame Gerer)
         {
             InitializeComponent();
             ImoContext ctx = ImoContext.getInstance();
+            this.frmGerer = Gerer;
+            this.intervention = intervention;
+
             Biens theBien = ctx.Biens.Find(intervention.BienId);
             lblNomBien.Content = theBien.Nom;
 
@@ -27,7 +33,7 @@ namespace WPF_Exo.Views.Detail.Interventions
 
         private void btnModifier_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            this.frmGerer.Navigate(new InterventionDoModify(intervention));
         }
     }
 }

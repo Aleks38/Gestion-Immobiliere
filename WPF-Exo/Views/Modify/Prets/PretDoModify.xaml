@@ -27,17 +27,17 @@
         <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Consulter un prêt" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+        <TextBox x:Name="txtNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Apport" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblApport" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+        <TextBox x:Name="txtApport" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Mensualité" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblMensualite" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+        <TextBox x:Name="txtMensualite" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
 
         <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Durée (mois)" VerticalAlignment="Center" FontSize="16"/>
-        <Label x:Name="lblDuree" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
-        
+        <TextBox x:Name="txtDuree" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
+
         <Button x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnModifier_Click"/>
     </Grid>
 </Page>

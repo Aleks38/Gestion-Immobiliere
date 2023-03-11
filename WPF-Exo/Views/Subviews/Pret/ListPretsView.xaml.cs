@@ -57,7 +57,7 @@ namespace WPF_Exo.Views.Subviews.Pret
 
             if (thePret != null)
             {
-                frmGerer.Navigate(new PretAfficherDetail(thePret));
+                frmGerer.Navigate(new PretAfficherDetail(thePret, frmGerer));
             }
         }
     }

@@ -28,7 +28,7 @@ namespace WPF_Exo.Views.Subviews.Prestataires
             Prestataire prestataire = (Prestataire)(sender as ListBox).SelectedItem;
             if (prestataire != null)
             {
-                PrestataireAfficherDetail prestataireDetail = new PrestataireAfficherDetail(prestataire);
+                PrestataireAfficherDetail prestataireDetail = new PrestataireAfficherDetail(prestataire, frmGerer);
 
                 frmGerer.Navigate(prestataireDetail);
             }

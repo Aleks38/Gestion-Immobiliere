@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Exo.Views.Modify.Prets;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -22,10 +23,14 @@ namespace WPF_Exo.Views.Detail.Prets
     /// </summary>
     public partial class PretAfficherDetail : Page
     {
-        public PretAfficherDetail(WPF_TP.Data.Models.Pret thePret)
+        Frame frmGerer;
+        Pret thePret;
+        public PretAfficherDetail(Pret thePret, Frame frmGerer)
         {
             InitializeComponent();
             ImoContext ctx = ImoContext.getInstance();
+            this.frmGerer = frmGerer;
+            this.thePret = thePret;
 
             Biens theBien = ctx.Biens.Where(b => b.Pret.PretId == thePret.PretId).FirstOrDefault();
 
@@ -42,7 +47,7 @@ namespace WPF_Exo.Views.Detail.Prets
 
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
-
+            this.frmGerer.Navigate(new PretDoModify(thePret));
         }
     }
 }
