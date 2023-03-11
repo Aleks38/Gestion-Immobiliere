@@ -1,0 +1,44 @@
+﻿<Page x:Class="WPF_Exo.Views.Detail.Prets.PretAfficherDetail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Exo.Views.Detail.Prets"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="PretAfficherDetail">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Consulter un prêt" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
+        <Label x:Name="lblNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Apport" VerticalAlignment="Center" FontSize="16"/>
+        <Label x:Name="lblApport" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" Text="Mensualité" VerticalAlignment="Center" FontSize="16"/>
+        <Label x:Name="lblMensualite" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Text="Durée (mois)" VerticalAlignment="Center" FontSize="16"/>
+        <Label x:Name="lblDuree" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+
+        <Button x:Name="btnSupprimer" Content="Supprimer" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnSupprimer_Click"/>
+        <Button x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnModifier_Click"/>
+    </Grid>
+</Page>

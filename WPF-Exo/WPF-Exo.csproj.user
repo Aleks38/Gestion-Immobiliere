@@ -31,6 +31,9 @@
     <Compile Update="Views\Detail\Prestataires\PrestataireAfficherDetail.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Detail\Prets\PretAfficherDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Forms\Interventions\GererInterventionsAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -85,6 +88,9 @@
     <Compile Update="Views\Modify\Prestataires\PrestataireDoModify.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Modify\Prets\PretDoModify.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\PretsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Page Update="Views\Detail\Prestataires\PrestataireAfficherDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Detail\Prets\PretAfficherDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Forms\Interventions\GererInterventionsAdd.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -175,6 +184,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Modify\Prestataires\PrestataireDoModify.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Modify\Prets\PretDoModify.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\NavigationView.xaml">

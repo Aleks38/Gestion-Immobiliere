@@ -28,7 +28,7 @@ namespace WPF_TP.Data.Models
         public int Duree { get => duree; set => duree = value; }
         public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
 
-        protected int capitalRestant()
+        public int capitalRestant()
         {
             int prixAppart = apport + mensualite * duree;
 

@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using WPF_Exo.Data.Models;
+using WPF_Exo.Views.Detail.Prets;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -25,9 +14,9 @@ namespace WPF_Exo.Views.Subviews.Pret
     {
         private class ListPretRow
         {
-            String NomBien { get; set; }
-            int Mensualite { get; set; }
-            int Montant { get; set; }
+            public String NomBien { get; set; }
+            public int Mensualite { get; set; }
+            public int Montant { get; set; }
             public int PretId { get; set; }
 
 
@@ -40,23 +29,36 @@ namespace WPF_Exo.Views.Subviews.Pret
 
             }
         }
-        public ListPretsView()
+
+        public Frame frmGerer;
+        public ListPretsView(Frame frmGerer)
         {
             InitializeComponent();
-
-            WPF_TP.Data.Models.Pret unPret = new WPF_TP.Data.Models.Pret();
-
+            this.frmGerer = frmGerer;
             ImoContext ctx = ImoContext.getInstance();
 
-            //foreach (Prets unPret in ctx.Prets)
-            //{
-            //    unPret.Bi
-            //}
+            foreach (WPF_TP.Data.Models.Pret pret in ctx.Pret)
+            {
+                ImoContext ctx2 = new ImoContext();
+                
+                Biens theBien = ctx2.Biens.Where(b => b.Pret.PretId == pret.PretId).FirstOrDefault();
+
+                ListPretRow theListPret = new ListPretRow(theBien.Nom, pret.Mensualite, theBien.Valeur, pret.PretId);
+                this.listViewPret.Items.Add(theListPret);
+   
+            }
         }
 
-        private void listViewInterventions_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void listViewPret_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            ImoContext ctx = ImoContext.getInstance();
+            ListPretRow pretRow = (ListPretRow)(sender as ListBox).SelectedItem;
+            WPF_TP.Data.Models.Pret thePret = ctx.Pret.Where(b => b.PretId == pretRow.PretId).FirstOrDefault();
 
+            if (thePret != null)
+            {
+                frmGerer.Navigate(new PretAfficherDetail(thePret));
+            }
         }
     }
 }

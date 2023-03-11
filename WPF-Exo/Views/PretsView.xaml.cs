@@ -26,7 +26,7 @@ namespace WPF_Exo.Views
         {
             InitializeComponent();
 
-            frmListPrets.Navigate(new ListPretsView());
+            frmListPrets.Navigate(new ListPretsView(this.frmGerer));
             frmGerer.Navigate(new GererPretsForm());
         }
 
