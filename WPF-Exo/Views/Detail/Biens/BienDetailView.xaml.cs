@@ -28,12 +28,13 @@ namespace WPF_Exo.Views.Details
     public partial class BienDetailView : Page, IObservable
     {
         public int IdBien { get; set; }
+        public Frame bienRightFrame { get; set; }
         private IObserver obs;
 
-        public BienDetailView(int idBien, IObserver obs)
+        public BienDetailView(int idBien, Frame bienRightFrame,IObserver obs)
         {
-            
             InitializeComponent();
+            this.bienRightFrame = bienRightFrame;
             this.obs = obs;
             this.Observers = new List<IObserver>();
 
@@ -69,7 +70,7 @@ namespace WPF_Exo.Views.Details
 
         private void btnModifier(object sender, RoutedEventArgs e)
         {
-            this.frmDetailBien.Navigate(new BienModifyView(IdBien));
+            this.bienRightFrame.Navigate(new BienModifyView(IdBien));
         }
 
         private void btnSupp(object sender, RoutedEventArgs e)

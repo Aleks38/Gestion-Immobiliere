@@ -42,7 +42,7 @@ namespace WPF_TP.Views.SubViews
         }
         private void bienDetail(int idBien)
         {
-            BienDetailView bienDetail = new BienDetailView(idBien, this);
+            BienDetailView bienDetail = new BienDetailView(idBien, this.bienRightFrame, this);
 
             this.bienRightFrame.Navigate(bienDetail);
         }
