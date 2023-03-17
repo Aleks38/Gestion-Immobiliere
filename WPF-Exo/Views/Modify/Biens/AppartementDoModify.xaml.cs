@@ -48,5 +48,10 @@ namespace WPF_Exo.Views.Details.Modify
             HabitationDoModify habitationModify = new HabitationDoModify(appartement);
             FrmBoxModify.Navigate(habitationModify);
         }
+
+        private void btnModifier(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

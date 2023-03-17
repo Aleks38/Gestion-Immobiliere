@@ -11,19 +11,13 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="frmModifyBien" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="2" Navigated="frmModifyBien_Navigated"/>
-        <Button Content="Modifier" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModifier"/>
+        <Frame x:Name="frmModifyBien" Navigated="frmModifyBien_Navigated"/>
+
 
     </Grid>
 </Page>

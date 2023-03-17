@@ -9,6 +9,17 @@
       Title="BoxDoModify">
 
     <Grid>
-        <Frame x:Name="FrmBoxModify" Navigated="FrmBoxModify_Navigated" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Frame x:Name="FrmBoxModify" Grid.RowSpan="2" Navigated="FrmBoxModify_Navigated" />
+        <Button Content="Modifier" Grid.Row="2"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModifier"/>
     </Grid>
 </Page>

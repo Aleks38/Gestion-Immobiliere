@@ -14,13 +14,13 @@ namespace WPF_Exo.Views.Subviews.Pret
     {
         private class ListPretRow
         {
-            public String NomBien { get; set; }
-            public int Mensualite { get; set; }
-            public int Montant { get; set; }
-            public int PretId { get; set; }
+            public String? NomBien { get; set; }
+            public int? Mensualite { get; set; }
+            public int? Montant { get; set; }
+            public int? PretId { get; set; }
 
 
-            public ListPretRow(String NomBien, int Mensualite, int Montant, int PretId)
+            public ListPretRow(String? NomBien, int? Mensualite, int? Montant, int? PretId)
             {
                 this.NomBien = NomBien;
                 this.Mensualite = Mensualite;
@@ -42,9 +42,12 @@ namespace WPF_Exo.Views.Subviews.Pret
                 ImoContext ctx2 = new ImoContext();
                 
                 Biens theBien = ctx2.Biens.Where(b => b.Pret.PretId == pret.PretId).FirstOrDefault();
-
-                ListPretRow theListPret = new ListPretRow(theBien.Nom, pret.Mensualite, theBien.Valeur, pret.PretId);
-                this.listViewPret.Items.Add(theListPret);
+                if (theBien != null)
+                {
+                    ListPretRow theListPret = new ListPretRow(theBien.Nom, pret.Mensualite, theBien.Valeur, pret.PretId);
+                    this.listViewPret.Items.Add(theListPret);
+                }
+                
    
             }
         }

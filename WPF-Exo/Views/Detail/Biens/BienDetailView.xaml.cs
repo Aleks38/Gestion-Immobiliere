@@ -19,7 +19,7 @@ namespace WPF_Exo.Views.Details
         public Frame bienRightFrame { get; set; }
         private IObserver obs;
 
-        public BienDetailView(int idBien, Frame bienRightFrame,IObserver obs)
+        public BienDetailView(int idBien, Frame bienRightFrame, IObserver obs)
         {
             InitializeComponent();
             this.bienRightFrame = bienRightFrame;

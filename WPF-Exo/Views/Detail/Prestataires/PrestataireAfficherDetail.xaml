@@ -44,7 +44,7 @@
         <TextBlock Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Text="Adresse" VerticalAlignment="Center" FontSize="16"/>
         <Label x:Name="lblAdresse" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="45"/>
 
-        <Button  x:Name="btnSupprimer" Content="Supprimer" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13"/>
+        <Button  x:Name="btnSupprimer" Content="Supprimer" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnSupprimer_Click"/>
         <Button  x:Name="btnModifier" Content="Modifier" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="13" Click="btnModifier_Click"/>
 
     </Grid>

@@ -44,7 +44,7 @@ namespace WPF_Exo.Views.Details.Modify
             {
                 this.frmModifyBien.Navigate(new MaisonDoModify((Maison)bien));
             }
-            
+
         }
 
         private void frmModifyBien_Navigated(object sender, NavigationEventArgs e)

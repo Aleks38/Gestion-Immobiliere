@@ -21,6 +21,7 @@ namespace WPF_Exo.Views.Details.Modify
     /// </summary>
     public partial class HabitationDoModify : Page
     {
+        Habitations habitation;
         public HabitationDoModify(Habitations habitation)
         {
             InitializeComponent();
@@ -36,6 +37,15 @@ namespace WPF_Exo.Views.Details.Modify
 
         private void FrmBienAfficherModif_Navigated(object sender, NavigationEventArgs e)
         {
+
+        }
+
+        public void validate()
+        {
+            this.habitation.NbPiece = int.Parse(txtNbrPiece.Text);
+            this.habitation.NbChambre = int.Parse(txtNbrChambre.Text);
+            this.habitation.Cave = int.Parse(txtNbrCave.Text);
+            this.habitation.Parking = int.Parse(txtNbrParking.Text);
 
         }
     }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Details.Modify
@@ -21,9 +22,12 @@ namespace WPF_Exo.Views.Details.Modify
     /// </summary>
     public partial class MaisonDoModify : Page
     {
+        Maison maison;
+        HabitationDoModify habitationDoModify;
         public MaisonDoModify(Maison maison)
         {
             InitializeComponent();
+            this.maison = maison;
 
             HabitationDoModify habitationtionModify = new HabitationDoModify(maison);
             FrmHabitationAfficherModif.Navigate(habitationtionModify);
@@ -33,5 +37,16 @@ namespace WPF_Exo.Views.Details.Modify
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ImoContext ctx = ImoContext.getInstance();
+
+            this.habitationDoModify.validate();
+
+            Console.WriteLine(this.maison);
+            ctx.SaveChanges();
+        }
+
     }
 }
