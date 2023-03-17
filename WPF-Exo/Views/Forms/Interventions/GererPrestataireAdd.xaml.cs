@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-using WPF_Exo.Views.Subviews.Interventions;
+using WPF_Exo.Views.Detail.Interventions;
+using WPF_Exo.Views.Detail.Prestataires;
 using WPF_Exo.Views.Subviews.Prestataires;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Forms.Interventions
 {
@@ -24,14 +15,24 @@ namespace WPF_Exo.Views.Forms.Interventions
     {
         Frame frmListView;
         Frame frmGererInter;
-        public GererPrestataireAdd(Frame frmListView, Frame frmGererInter)
+        Intervention? interventions;
+        public GererPrestataireAdd(Frame frmListView, Frame frmGererInter, Intervention? interventions)
         {
             InitializeComponent();
-
-            frmGerer.Navigate(new GererInterventionsForm());
-
             this.frmListView = frmListView;
             this.frmGererInter = frmGererInter;
+
+            if (interventions == null)
+            {
+                frmGerer.Navigate(new GererInterventionsForm());
+            }
+            else
+            {
+                frmGerer.Navigate(new InterventionAfficherDetail(interventions, frmGerer));
+            }
+            
+
+            
         }
 
         private void frmGerer_Navigated(object sender, NavigationEventArgs e)
@@ -41,8 +42,8 @@ namespace WPF_Exo.Views.Forms.Interventions
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.frmGererInter.Navigate(new GererInterventionsAdd(frmListView, frmGererInter));
-            this.frmListView.Navigate(new ListPrestatairesView(frmGererInter));
+            this.frmGererInter.Navigate(new GererInterventionsAdd(frmListView, frmGererInter, null));
+            this.frmListView.Navigate(new ListPrestatairesView(frmGererInter, frmListView));
 
         }
     }

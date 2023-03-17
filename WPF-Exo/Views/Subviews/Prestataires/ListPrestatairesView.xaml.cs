@@ -1,5 +1,6 @@
 ﻿using System.Windows.Controls;
 using WPF_Exo.Views.Detail.Prestataires;
+using WPF_Exo.Views.Forms.Interventions;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -11,10 +12,12 @@ namespace WPF_Exo.Views.Subviews.Prestataires
     public partial class ListPrestatairesView : Page
     {
         Frame frmGerer;
-        public ListPrestatairesView(Frame frmGerer)
+        Frame frmList;
+        public ListPrestatairesView(Frame frmGerer, Frame frmList)
         {
             InitializeComponent();
             this.frmGerer = frmGerer;
+            this.frmList = frmList;
             ImoContext ctx = ImoContext.getInstance();
 
             foreach (Prestataire prestataire in ctx.Prestataires)
@@ -30,7 +33,9 @@ namespace WPF_Exo.Views.Subviews.Prestataires
             {
                 PrestataireAfficherDetail prestataireDetail = new PrestataireAfficherDetail(prestataire, frmGerer);
 
-                frmGerer.Navigate(prestataireDetail);
+                GererInterventionsAdd gererInterventionsAdd = new GererInterventionsAdd(frmList, frmGerer, prestataire);
+
+                frmGerer.Navigate(gererInterventionsAdd);
             }
         }
     }

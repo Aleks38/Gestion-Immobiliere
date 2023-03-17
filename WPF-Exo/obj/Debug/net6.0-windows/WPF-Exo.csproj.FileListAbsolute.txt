@@ -467,3 +467,12 @@ C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\De
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Prets\PretAfficherDetail.baml
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prets\PretDoModify.g.cs
 C:\Users\alexy\git\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prets\PretDoModify.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Prets\PretAfficherDetail.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prets\PretDoModify.g.cs
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Detail\Prets\PretAfficherDetail.baml
+C:\Users\a.da silva\Documents\Gestion-Immobiliere\WPF-Exo\obj\Debug\net6.0-windows\Views\Modify\Prets\PretDoModify.baml

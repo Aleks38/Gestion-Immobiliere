@@ -1,19 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WPF_Exo.Views.Detail.Prestataires;
 using WPF_Exo.Views.Subviews.Interventions;
-using WPF_Exo.Views.Subviews.Prestataires;
+using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Forms.Interventions
 {
@@ -24,13 +14,22 @@ namespace WPF_Exo.Views.Forms.Interventions
     {
         Frame frmListView;
         Frame frmGererList;
-        public GererInterventionsAdd(Frame frmListView, Frame frmGererList)
+        Prestataire? prestataire;
+        public GererInterventionsAdd(Frame frmListView, Frame frmGererList, Prestataire? prestataire)
         {
             InitializeComponent();
             this.frmListView = frmListView;
             this.frmGererList = frmGererList;
+            this.prestataire = prestataire;
 
-            frmGerer.Navigate(new GererPrestataireForm());
+            if (prestataire == null)
+            {
+                frmGerer.Navigate(new GererPrestataireForm());
+            } else
+            {
+                frmGerer.Navigate(new PrestataireAfficherDetail(prestataire, frmGerer));
+            }
+            
         }
 
         private void frmGerer_Navigated(object sender, NavigationEventArgs e)
@@ -41,8 +40,8 @@ namespace WPF_Exo.Views.Forms.Interventions
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            this.frmGererList.Navigate(new GererPrestataireAdd(frmListView, frmGererList));
-            this.frmListView.Navigate(new ListInterventionsView(frmGererList));
+            this.frmGererList.Navigate(new GererPrestataireAdd(frmListView, frmGererList, null));
+            this.frmListView.Navigate(new ListInterventionsView(frmGererList, frmListView));
         }
     }
 }

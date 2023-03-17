@@ -25,6 +25,7 @@ namespace WPF_Exo.Views.Forms.Interventions
     public partial class GererPrestataireForm : Page, IObservable
     {
         public List<IObserver> Observers { get; set; }
+
         public GererPrestataireForm()
         {
             InitializeComponent();

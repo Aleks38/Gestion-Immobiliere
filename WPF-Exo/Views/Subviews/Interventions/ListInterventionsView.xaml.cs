@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_Exo.Views.Detail.Interventions;
+using WPF_Exo.Views.Forms.Interventions;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -43,10 +44,12 @@ namespace WPF_Exo.Views.Subviews.Interventions
         }
 
         public Frame frmGerer;
-        public ListInterventionsView(Frame frmGerer)
+        public Frame frmList;
+        public ListInterventionsView(Frame frmGerer, Frame frmList)
         {
             InitializeComponent();
             this.frmGerer = frmGerer;
+            this.frmList = frmList;
             ImoContext ctx = ImoContext.getInstance();
 
             foreach (Intervention intervention in ctx.Intervention)
@@ -63,8 +66,7 @@ namespace WPF_Exo.Views.Subviews.Interventions
                     this.listViewInterventions.Items.Add(interventionRow);
                 }
             }
-
-            this.refreshList();
+            //this.refreshList();
         }
 
         public void refreshList()
@@ -91,10 +93,10 @@ namespace WPF_Exo.Views.Subviews.Interventions
             if (listIntervention != null)
             {
                 ImoContext ctx = ImoContext.getInstance();
-                ctx.Intervention.Find(listIntervention.InterventionId);
+                Intervention theIntervention = ctx.Intervention.Find(listIntervention.InterventionId);
 
-                InterventionAfficherDetail interventionDetail = new InterventionAfficherDetail(ctx.Intervention.Find(listIntervention.InterventionId), frmGerer);
-                frmGerer.Navigate(interventionDetail);
+                GererPrestataireAdd prestataireAdd = new GererPrestataireAdd(frmList, frmGerer, theIntervention);
+                frmGerer.Navigate(prestataireAdd);
             }
             
         }
