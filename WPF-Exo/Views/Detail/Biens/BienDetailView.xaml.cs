@@ -18,6 +18,7 @@ namespace WPF_Exo.Views.Details
         public int IdBien { get; set; }
         public Frame bienRightFrame { get; set; }
         private IObserver obs;
+        public List<IObserver> Observers { get; set; }
 
         public BienDetailView(int idBien, Frame bienRightFrame, IObserver obs)
         {
@@ -49,7 +50,6 @@ namespace WPF_Exo.Views.Details
             }
    
         }
-        public List<IObserver> Observers { get; set; }
 
         private void frmDetailBien_Navigated(object sender, NavigationEventArgs e)
         {

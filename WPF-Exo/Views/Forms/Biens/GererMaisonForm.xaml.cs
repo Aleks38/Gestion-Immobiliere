@@ -23,12 +23,12 @@ namespace WPF_Exo.Views.Subviews
     /// </summary>
     public partial class GererMaisonForm : Page, IObservable
     {
+        public List<IObserver> Observers { get; set; }
         public GererMaisonForm()
         {
             InitializeComponent();
             this.Observers = new List<IObserver>();
         }
-        public List<IObserver> Observers { get; set; }
 
         private void btnAjouterMaison_Click(object sender, RoutedEventArgs e)
         {

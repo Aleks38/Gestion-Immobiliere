@@ -26,11 +26,6 @@ namespace WPF_Exo.Views.Detail.Prestataires
             this.prestataire = prestataire;
             this.Observers = new List<IObserver>();
 
-            if (this.obs != null)
-            {
-                Observers.Add(obs);
-            }
-
             lblRaisonSoc.Content = prestataire.RaisonSociale;
             lblNom.Content = prestataire.Nom;
             lblPrenom.Content = prestataire.Prenom;
@@ -51,7 +46,7 @@ namespace WPF_Exo.Views.Detail.Prestataires
         private void btnSupprimer_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             if (MessageBox.Show("Voulez vous vraiment supprimer ce Prestataire ?",
-                    "Supprimer bien",
+                    "Supprimer prestataire",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
@@ -61,7 +56,7 @@ namespace WPF_Exo.Views.Detail.Prestataires
                 ctx.SaveChanges();
                 this.notifyObservers();
 
-                MessageBox.Show("Le bien " + thePrestataire.Nom + " " + thePrestataire.Prenom + " a bien été suprimé.");
+                MessageBox.Show("Le prestataire " + thePrestataire.Nom + " " + thePrestataire.Prenom + " a bien été suprimé.");
             }
         }
         void notifyObservers()

@@ -36,12 +36,7 @@ namespace WPF_Exo.Views.Detail.Prets
             this.frmGerer = frmGerer;
             this.thePret = thePret;
             this.obs = obs;
-            //this.Observers = new List<IObserver>();
-
-            //if (this.obs != null)
-            //{
-            //    Observers.Add(obs);
-            //}
+            this.Observers = new List<IObserver>();
 
             Biens theBien = ctx.Biens.Where(b => b.Pret.PretId == thePret.PretId).FirstOrDefault();
 
@@ -63,7 +58,7 @@ namespace WPF_Exo.Views.Detail.Prets
                 Biens bien = ctx.Biens.Where(b => b.Pret.PretId == pret.PretId).FirstOrDefault();
                 ctx.Pret.Remove(pret);
                 ctx.SaveChanges();
-                //this.notifyObservers();
+                this.notifyObservers();
 
                 MessageBox.Show("Le pret pour " + bien.Nom + " a bien été supprimé");
             }

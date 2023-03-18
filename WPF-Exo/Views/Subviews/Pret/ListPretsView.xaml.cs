@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Controls;
 using WPF_Exo.Views.Detail.Prets;
+using WPF_Exo.Views.Tools;
 using WPF_TP.Data.DAL;
 using WPF_TP.Data.Models;
 
@@ -10,7 +11,7 @@ namespace WPF_Exo.Views.Subviews.Pret
     /// <summary>
     /// Logique d'interaction pour ListPretsView.xaml
     /// </summary>
-    public partial class ListPretsView : Page
+    public partial class ListPretsView : Page, IObserver
     {
         private class ListPretRow
         {
@@ -35,33 +36,42 @@ namespace WPF_Exo.Views.Subviews.Pret
         {
             InitializeComponent();
             this.frmGerer = frmGerer;
-            ImoContext ctx = ImoContext.getInstance();
 
-            foreach (WPF_TP.Data.Models.Pret pret in ctx.Pret)
-            {
-                ImoContext ctx2 = new ImoContext();
-                
-                Biens theBien = ctx2.Biens.Where(b => b.Pret.PretId == pret.PretId).FirstOrDefault();
-                if (theBien != null)
-                {
-                    ListPretRow theListPret = new ListPretRow(theBien.Nom, pret.Mensualite, theBien.Valeur, pret.PretId);
-                    this.listViewPret.Items.Add(theListPret);
-                }
-                
-   
-            }
+            refreshList();
         }
 
         private void listViewPret_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ImoContext ctx = ImoContext.getInstance();
             ListPretRow pretRow = (ListPretRow)(sender as ListBox).SelectedItem;
-            WPF_TP.Data.Models.Pret thePret = ctx.Pret.Where(b => b.PretId == pretRow.PretId).FirstOrDefault();
 
-            if (thePret != null)
+            if (pretRow != null)
             {
+                WPF_TP.Data.Models.Pret thePret = ctx.Pret.Where(b => b.PretId == pretRow.PretId).FirstOrDefault();
                 frmGerer.Navigate(new PretAfficherDetail(thePret, frmGerer));
             }
+        }
+        private void refreshList()
+        {
+            ImoContext ctx = ImoContext.getInstance();
+
+            this.listViewPret.Items.Clear();
+
+            foreach (WPF_TP.Data.Models.Pret pret in ctx.Pret)
+            {
+                ImoContext ctx2 = new ImoContext();
+
+                Biens theBien = ctx2.Biens.Where(b => b.Pret.PretId == pret.PretId).FirstOrDefault();
+                if (theBien != null)
+                {
+                    ListPretRow theListPret = new ListPretRow(theBien.Nom, pret.Mensualite, theBien.Valeur, pret.PretId);
+                    this.listViewPret.Items.Add(theListPret);
+                }
+            }
+        }
+        public void update()
+        {
+            this.refreshList();
         }
     }
 }

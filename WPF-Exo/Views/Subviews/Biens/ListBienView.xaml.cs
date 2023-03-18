@@ -50,7 +50,6 @@ namespace WPF_TP.Views.SubViews
         {
             ImoContext ctx = ImoContext.getInstance();
 
-          //  this.listViewBiens.ItemsSource = null;
             this.listViewBiens.Items.Clear();
 
             foreach (Biens bien in ctx.Biens)
