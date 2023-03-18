@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WPF_TP.Data.Models;
 
 namespace WPF_Exo.Views.Modify.Prets
@@ -21,9 +9,11 @@ namespace WPF_Exo.Views.Modify.Prets
     /// </summary>
     public partial class PretDoModify : Page
     {
+        Pret unPret;
         public PretDoModify(Pret unPret)
         {
             InitializeComponent();
+            this.unPret = unPret;
 
             txtApport.Text = unPret.Apport.ToString();
             txtMensualite.Text = unPret.Mensualite.ToString();
@@ -32,7 +22,9 @@ namespace WPF_Exo.Views.Modify.Prets
 
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
-
+            this.unPret.Apport = int.Parse(txtApport.Text);
+            this.unPret.Mensualite = int.Parse(txtMensualite.Text);
+            this.unPret.Duree = int.Parse(txtDuree.Text);
         }
     }
 }
