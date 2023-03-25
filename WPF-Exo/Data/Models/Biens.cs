@@ -63,7 +63,7 @@ namespace WPF_TP.Data.Models
             {
                 montantPret = this.Pret.Mensualite;
             }
-            
+
             if (this.listContrat.Count > 0)
             {
                 foreach (Contrat contrat in this.listContrat)
@@ -76,6 +76,6 @@ namespace WPF_TP.Data.Models
                 }
             }
             return loyer - montantPret;
-        } 
+        }
     }
 }

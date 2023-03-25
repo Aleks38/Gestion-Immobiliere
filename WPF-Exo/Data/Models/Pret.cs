@@ -30,15 +30,16 @@ namespace WPF_TP.Data.Models
 
         public int capitalRestant()
         {
-            int prixAppart = apport + mensualite * duree;
+            DateTime today = DateTime.Today;
+            int diffMois = ((today.Year - this.DateDebut.Year) * 12) + today.Month - this.DateDebut.Month;
+            int capitalRestant = 0;
 
-            float dateFloat = (float)(DateTime.Now.Subtract(dateDebut).Days / (365.25 / 12));
-            int dateInt = (int)dateFloat + 1;
+            if (diffMois < this.Duree)
+            {
+                capitalRestant = (this.Duree - diffMois) * Mensualite;
+            }
 
-            int dejaPaye = mensualite * dateInt;
-
-            int capital = prixAppart - dejaPaye;
-            return capital;
+            return capitalRestant;
         }
 
         //fonction pour afficher les détails d'un bien

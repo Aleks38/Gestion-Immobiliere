@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-Exo", "WPF-Exo\WPF-Exo.csproj", "{6AD59222-4470-4B91-AECA-6F7F2FBD707B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-Exo", "WPF-Exo\WPF-Exo.csproj", "{6AD59222-4470-4B91-AECA-6F7F2FBD707B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestImmoTests", "GestImmoTests\GestImmoTests.csproj", "{6E962505-0D5F-45AA-BB8C-42DC0974103E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6AD59222-4470-4B91-AECA-6F7F2FBD707B} = {6AD59222-4470-4B91-AECA-6F7F2FBD707B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{6AD59222-4470-4B91-AECA-6F7F2FBD707B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AD59222-4470-4B91-AECA-6F7F2FBD707B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AD59222-4470-4B91-AECA-6F7F2FBD707B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E962505-0D5F-45AA-BB8C-42DC0974103E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E962505-0D5F-45AA-BB8C-42DC0974103E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E962505-0D5F-45AA-BB8C-42DC0974103E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E962505-0D5F-45AA-BB8C-42DC0974103E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

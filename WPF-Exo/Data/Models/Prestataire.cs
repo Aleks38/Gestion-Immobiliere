@@ -36,5 +36,7 @@ namespace WPF_TP.Data.Models
         public string Telephone { get => telephone; set => telephone = value; }
         public string Adresse { get => adresse; set => adresse = value; }
         public List<Intervention> ListIntervention { get => listIntervention; set => listIntervention = value; }
+
+
     }
 }
