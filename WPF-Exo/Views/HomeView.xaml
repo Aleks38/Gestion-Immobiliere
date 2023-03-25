@@ -9,8 +9,36 @@
       Title="HomeView">
 
     <Grid>
-        
-        <Label x:Name="lblExplication" Content="Tableau de bord et statistiques" HorizontalAlignment="Center" Margin="0,196,0,0" VerticalAlignment="Top" FontSize="14" HorizontalContentAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblTableau" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" FontWeight="Bold" Content="Tableau de bord" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+
+        <Label x:Name="lblNbrBien" Content="5" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45" FontWeight="Bold"/>
+        <Label Content="Nombre de bien" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+
+        <Label x:Name="lblNbrPret" Content="4" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45" FontWeight="Bold"/>
+        <Label Content="Nombre de prêt" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+
+        <Label x:Name="lblNbrDette"  Content="20000 €" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45" FontWeight="Bold"/>
+        <Label Content="Dette mensuel cumulé" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
 
     </Grid>
 </Page>

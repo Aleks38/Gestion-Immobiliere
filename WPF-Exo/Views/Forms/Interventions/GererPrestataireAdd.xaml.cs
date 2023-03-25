@@ -35,10 +35,7 @@ namespace WPF_Exo.Views.Forms.Interventions
             else
             {
                 frmGerer.Navigate(new InterventionAfficherDetail(interventions, frmGerer));
-            }
-            
-
-            
+            }   
         }
 
         private void frmGerer_Navigated(object sender, NavigationEventArgs e)
