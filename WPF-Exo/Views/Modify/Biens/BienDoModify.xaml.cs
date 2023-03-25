@@ -8,7 +8,7 @@ namespace WPF_Exo.Views.Details.Modify
     /// </summary>
     public partial class BienDoModify : Page
     {
-        public Biens bien { get; set; }
+        public Biens bien;
         public BienDoModify(Biens bien)
         {
             InitializeComponent();

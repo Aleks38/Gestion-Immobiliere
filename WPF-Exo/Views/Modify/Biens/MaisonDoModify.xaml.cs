@@ -28,9 +28,9 @@ namespace WPF_Exo.Views.Details.Modify
         {
             InitializeComponent();
             this.maison = maison;
+            this.habitationDoModify = new HabitationDoModify(maison);
 
-            HabitationDoModify habitationtionModify = new HabitationDoModify(maison);
-            FrmHabitationAfficherModif.Navigate(habitationtionModify);
+            FrmHabitationAfficherModif.Navigate(habitationDoModify);
         }
 
         private void FrmHabitationAfficherModif_Navigated(object sender, NavigationEventArgs e)
@@ -38,15 +38,13 @@ namespace WPF_Exo.Views.Details.Modify
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnModify_Click(object sender, RoutedEventArgs e)
         {
             ImoContext ctx = ImoContext.getInstance();
 
             this.habitationDoModify.validate();
 
-            Console.WriteLine(this.maison);
             ctx.SaveChanges();
         }
-
     }
 }

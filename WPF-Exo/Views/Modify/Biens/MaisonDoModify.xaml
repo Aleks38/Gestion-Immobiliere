@@ -22,6 +22,6 @@
         </Grid.RowDefinitions>
         
         <Frame x:Name="FrmHabitationAfficherModif" Grid.Row="0" Grid.RowSpan="5" Navigated="FrmHabitationAfficherModif_Navigated" />
-        <Button Content="Button" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" />
+        <Button x:Name="btnModify" Content="Modifier" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModify_Click"/>
     </Grid>
 </Page>

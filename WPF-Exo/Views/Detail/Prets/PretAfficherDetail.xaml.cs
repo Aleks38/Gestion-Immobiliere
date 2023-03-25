@@ -29,7 +29,7 @@ namespace WPF_Exo.Views.Detail.Prets
         Pret thePret;
         private IObserver obs;
         public List<IObserver> Observers { get; set; }
-        public PretAfficherDetail(Pret thePret, Frame frmGerer)
+        public PretAfficherDetail(Pret thePret, Frame frmGerer, IObserver obs)
         {
             InitializeComponent();
             ImoContext ctx = ImoContext.getInstance();
@@ -37,6 +37,11 @@ namespace WPF_Exo.Views.Detail.Prets
             this.thePret = thePret;
             this.obs = obs;
             this.Observers = new List<IObserver>();
+
+            if (this.obs != null)
+            {
+                Observers.Add(obs);
+            }
 
             Biens theBien = ctx.Biens.Where(b => b.Pret.PretId == thePret.PretId).FirstOrDefault();
 

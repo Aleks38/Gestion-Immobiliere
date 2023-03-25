@@ -22,10 +22,12 @@ namespace WPF_Exo.Views.Details.Modify
     public partial class HabitationDoModify : Page
     {
         Habitations habitation;
+        BienDoModify bienModify;
         public HabitationDoModify(Habitations habitation)
         {
             InitializeComponent();
-            BienDoModify bienModify = new BienDoModify(habitation);
+            this.habitation = habitation;
+            this.bienModify = new BienDoModify(habitation);
             this.FrmBienAfficherModif.Navigate(bienModify);
 
             txtNbrPiece.Text = habitation.NbPiece.ToString();
@@ -47,6 +49,7 @@ namespace WPF_Exo.Views.Details.Modify
             this.habitation.Cave = int.Parse(txtNbrCave.Text);
             this.habitation.Parking = int.Parse(txtNbrParking.Text);
 
+            this.bienModify.validate();
         }
     }
 }

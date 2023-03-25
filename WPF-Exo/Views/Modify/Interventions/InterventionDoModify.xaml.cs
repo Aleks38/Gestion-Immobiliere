@@ -9,9 +9,11 @@ namespace WPF_Exo.Views.Modify.Interventions
     /// </summary>
     public partial class InterventionDoModify : Page
     {
+        Intervention theIntervention;
         public InterventionDoModify(Intervention theIntervention)
         {
             InitializeComponent();
+            this.theIntervention = theIntervention;
 
             ImoContext ctx = ImoContext.getInstance();
 
@@ -28,6 +30,13 @@ namespace WPF_Exo.Views.Modify.Interventions
             txtDate.Text = theIntervention.DateIntervention;
             txtMontant.Text = theIntervention.MontantTTC.ToString();
             txtInformation.Text = theIntervention.Information;
+        }
+
+        private void btnModifier_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.theIntervention.DateIntervention = txtDate.Text;
+            this.theIntervention.MontantTTC = int.Parse(txtMontant.Text);
+            this.theIntervention.Information = txtInformation.Text;
         }
     }
 }

@@ -48,7 +48,7 @@ namespace WPF_Exo.Views.Subviews.Pret
             if (pretRow != null)
             {
                 WPF_TP.Data.Models.Pret thePret = ctx.Pret.Where(b => b.PretId == pretRow.PretId).FirstOrDefault();
-                frmGerer.Navigate(new PretAfficherDetail(thePret, frmGerer));
+                frmGerer.Navigate(new PretAfficherDetail(thePret, frmGerer, this));
             }
         }
         private void refreshList()

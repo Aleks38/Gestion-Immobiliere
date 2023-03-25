@@ -47,7 +47,7 @@
             <ComboBoxItem>Ne possède pas</ComboBoxItem>
         </ComboBox>
 
-        <Button Content="Modifier" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModifier"/>
+        <Button x:Name="btnModify" Content="Modifier" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnModify_Click" />
 
     </Grid>
 </Page>

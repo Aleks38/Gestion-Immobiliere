@@ -18,8 +18,8 @@ namespace WPF_Exo.Views.Details.Modify
         {
             InitializeComponent();
             this.box = box;
+            this.bienModify = new BienDoModify(box);
 
-            bienModify = new BienDoModify(box);
             FrmBoxModify.Navigate(bienModify);
             
         }
