@@ -27,8 +27,8 @@
         <Label x:Name="lblAjouter" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Consulter un prêt" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="Arial Black"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Text="Bien" VerticalAlignment="Center" FontSize="16"/>
-        <TextBox x:Name="txtNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
-
+        <Label x:Name="lblNomBien" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="{Binding LabelText}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Height="44"/>
+        
         <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Text="Apport" VerticalAlignment="Center" FontSize="16"/>
         <TextBox x:Name="txtApport" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="" VerticalAlignment="Center" Height="30"/>
 

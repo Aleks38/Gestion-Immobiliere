@@ -18,7 +18,7 @@ namespace WPF_Exo.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.10")
+                .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -53,6 +53,8 @@ namespace WPF_Exo.Migrations
                     b.HasIndex("PretId");
 
                     b.ToTable("Biens");
+
+                    b.UseTptMappingStrategy();
                 });
 
             modelBuilder.Entity("WPF_TP.Data.Models.Contrat", b =>
@@ -63,13 +65,11 @@ namespace WPF_Exo.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ContratId"));
 
-                    b.Property<string>("DateDebut")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateDebut")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("DateFin")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime?>("DateFin")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Loyer")
                         .HasColumnType("integer");

@@ -32,22 +32,29 @@ namespace WPF_Exo.Views.Forms.Prets
         private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
             ImoContext ctx = ImoContext.getInstance();
+            ImoContext ctx2 = new ImoContext();
+            ImoContext ctx3 = new ImoContext();
 
             var theBien = cmbBoxNomBien.SelectedItem;
-
-            Biens unBien = ctx.Biens.Where(r => r.Nom == theBien).FirstOrDefault();
 
             int apport = int.Parse(txtBxApport.Text);
             int mensualite = int.Parse(txtBxMensualite.Text);
             int duree = int.Parse(txtBxDuree.Text);
             DateTime dateDebut = DateTime.Now;
+            DateTime utcDateTime = dateDebut.ToUniversalTime();
 
-            Pret thePret = new Pret(apport, mensualite, duree, dateDebut);
-
-            unBien.Pret = new Pret(apport, mensualite, duree, dateDebut);
+            Pret thePret = new Pret(apport, mensualite, duree, utcDateTime);
+            
             ctx.Pret.Add(thePret);
 
             ctx.SaveChanges();
+
+            Biens unBien = ctx2.Biens.Where(r => r.Nom == theBien).FirstOrDefault();
+            Pret unPret = ctx3.Pret.Where(r => r.DateDebut == utcDateTime).FirstOrDefault();
+
+            unBien.Pret = unPret;
+
+            ctx2.SaveChanges();
             this.notifyObservers();
         }
         void notifyObservers()
